@@ -326,7 +326,7 @@ body {
 .nav-link {
     color: var(--text-secondary) !important;
     font-weight: 600;
-    font-size: clamp(12px, 1.5vw, 14px);
+    font-size: clamp(12px, 1.5vw, 11px);
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 10px clamp(12px, 2vw, 18px) !important;
