@@ -496,10 +496,10 @@ body {
     letter-spacing: -0.02em;
     position: relative;
     
-    text-shadow: 
+    /* text-shadow: 
         0 0 40px rgba(0, 212, 255, 0.6),
         0 0 80px rgba(14, 165, 233, 0.3),
-        0 5px 30px rgba(0, 0, 0, 0.4);
+        0 5px 30px rgba(0, 0, 0, 0.4); */
     
     animation: titleGlow 3.5s ease-in-out infinite;
     
