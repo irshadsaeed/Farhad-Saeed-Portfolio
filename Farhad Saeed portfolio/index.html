@@ -2,23 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="description" content="Farhad Saeed - Expert Civil Engineer & Design Specialist | AutoCAD, 3D Visualization, Graphic Design">
+    <meta name="keywords" content="Civil Engineer, AutoCAD, 3D Design, Graphic Design, SketchUp, Portfolio">
+    <meta name="author" content="Farhad Saeed">
+    <meta name="theme-color" content="#0EA5E9">
+    
     <title>Farhad Saeed | Civil Engineer & Design Expert</title>
     
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google Fonts - Inter & Space Grotesk -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
     
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <link href="index.css" rel="stylesheet">
     
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="farhadlogo.png">
 </head>
 <body>
     <!-- Loading Screen -->
@@ -29,7 +42,7 @@
         </div>
     </div>
 
-    <!-- Cursor Follower -->
+    <!-- Custom Cursor (Desktop Only) -->
     <div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-outline" id="cursorOutline"></div>
 
@@ -37,10 +50,10 @@
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#home">
-                <img src="farhadlogo.png" alt="Farhad Saeed logo" class="logo-image">
+                <img src="farhadlogo.png" alt="Farhad Saeed Logo" class="logo-image" loading="lazy">
                 <span class="brand-line"></span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
@@ -58,7 +71,7 @@
         </div>
     </nav>
 
-    <!-- Hero Section - ULTRA ENHANCED -->
+    <!-- Hero Section -->
     <section id="home" class="hero-section">
         <div class="hero-background">
             <div class="hero-grid"></div>
@@ -68,19 +81,18 @@
         </div>
         
         <div class="container">
-            <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+            <div class="row align-items-center min-vh-100 g-4 g-lg-5">
+                <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right" data-aos-duration="1000">
                     <div class="hero-content">
-                        <h1 class="hero-title split-animation">
-    Hi, I'm <span class="gradient-text">Farhad Saeed</span>
-</h1>
-                        <h2 class="hero-subtitle">Civil Engineer & Design Expert</h2>
+                        <h1 class="hero-title">
+                            Hi, I'm <span class="gradient-text">Farhad Saeed</span>
+                        </h1>
+                        <h2 class="hero-subtitle">Civil Engineer | AI & Design Innovator</h2>
                         <p class="hero-description">
-                            Transforming visions into reality through innovative engineering and creative design solutions. 
-                            Specializing in AutoCAD, 3D visualization, and modern design thinking.
+                            Bridging engineering precision with creative innovation — I specialize in Civil Engineering, AutoCAD, SketchUp, and advanced AI-driven design. 
+                            Passionate about transforming concepts into high-impact visual and structural realities through modern 3D visualization, smart design thinking, and cutting-edge technology.
                         </p>
                         
-                        <!-- ENHANCED BUTTONS -->
                         <div class="hero-buttons">
                             <a href="#contact" class="btn-hero-primary">
                                 <span class="btn-text">Let's Work Together</span>
@@ -111,11 +123,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
                     <div class="hero-image-container">
                         <div class="image-backdrop"></div>
                         <div class="image-wrapper">
-                            <img src="farhad1.jpeg" alt="Farhad Saeed" class="profile-image">
+                            <img src="farhad1.jpeg" alt="Farhad Saeed - Civil Engineer" class="profile-image" loading="eager">
                         </div>
                     </div>
                 </div>
@@ -133,7 +145,7 @@
                 </p>
             </div>
             
-            <div class="row align-items-center">
+            <div class="row align-items-center g-4 g-lg-5">
                 <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
                     <div class="about-content">
                         <h3 class="about-heading">Turning Ideas Into <span class="gradient-text">Visual Reality</span></h3>
@@ -481,7 +493,7 @@
                             <i class="fas fa-home"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="#" class="project-link">
+                            <a href="#" class="project-link" aria-label="View Residential Color Scheme Project">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
@@ -505,7 +517,7 @@
                             <i class="fas fa-cube"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="#" class="project-link">
+                            <a href="#" class="project-link" aria-label="View 3D House Visualization Project">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
@@ -529,7 +541,7 @@
                             <i class="fas fa-drafting-compass"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="#" class="project-link">
+                            <a href="#" class="project-link" aria-label="View 2D Floor & Elevation Project">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
@@ -553,7 +565,7 @@
                             <i class="fas fa-paint-brush"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="#" class="project-link">
+                            <a href="#" class="project-link" aria-label="View Branding & Marketing Project">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
@@ -577,7 +589,7 @@
                             <i class="fas fa-building"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="#" class="project-link">
+                            <a href="#" class="project-link" aria-label="View Commercial Building Project">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
@@ -601,7 +613,7 @@
                             <i class="fas fa-tree"></i>
                         </div>
                         <div class="project-overlay">
-                            <a href="#" class="project-link">
+                            <a href="#" class="project-link" aria-label="View Landscape Design Project">
                                 <i class="fas fa-external-link-alt"></i>
                             </a>
                         </div>
@@ -807,7 +819,7 @@
                 </p>
             </div>
             
-            <div class="row g-4">
+            <div class="row g-4 g-lg-5">
                 <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
                     <div class="contact-info-modern">
                         <h3 class="contact-info-title">Contact Information</h3>
@@ -822,7 +834,7 @@
                                 </div>
                                 <div class="contact-text">
                                     <h4>Phone</h4>
-                                    <p>0315978482</p>
+                                    <p><a href="tel:+923159784820">0315978482</a></p>
                                 </div>
                             </div>
                             
@@ -832,7 +844,7 @@
                                 </div>
                                 <div class="contact-text">
                                     <h4>Email</h4>
-                                    <p>farhadsaeed0314@gmail.com</p>
+                                    <p><a href="mailto:farhadsaeed0314@gmail.com">farhadsaeed0314@gmail.com</a></p>
                                 </div>
                             </div>
                             
@@ -848,19 +860,19 @@
                         </div>
                         
                         <div class="social-links-modern">
-                            <a href="#" class="social-link-modern" title="LinkedIn">
+                            <a href="#" class="social-link-modern" aria-label="LinkedIn Profile">
                                 <i class="fab fa-linkedin-in"></i>
                             </a>
-                            <a href="#" class="social-link-modern" title="GitHub">
+                            <a href="#" class="social-link-modern" aria-label="GitHub Profile">
                                 <i class="fab fa-github"></i>
                             </a>
-                            <a href="#" class="social-link-modern" title="Facebook">
+                            <a href="#" class="social-link-modern" aria-label="Facebook Profile">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="social-link-modern" title="Instagram">
+                            <a href="#" class="social-link-modern" aria-label="Instagram Profile">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" class="social-link-modern" title="Twitter">
+                            <a href="#" class="social-link-modern" aria-label="Twitter Profile">
                                 <i class="fab fa-twitter"></i>
                             </a>
                         </div>
@@ -928,643 +940,32 @@
                     <div class="footer-col">
                         <h4>Connect</h4>
                         <div class="footer-social">
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-github"></i></a>
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
             
             <div class="footer-bottom">
-  <p>&copy; 2025 Farhad Saeed — All rights reserved.</p>
-</div>
-
+                <p>&copy; 2025 Farhad Saeed — All rights reserved.</p>
+                <p>Made with <i class="fas fa-heart"></i> for Excellence</p>
+            </div>
         </div>
     </footer>
 
     <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop">
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
         <i class="fas fa-arrow-up"></i>
     </button>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    
-    <!-- AOS Animation -->
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
     <script src="script.js"></script>
-    <script>
-        // ========================================
-// NEXT-GENERATION PORTFOLIO - JAVASCRIPT
-// ========================================
-
-(function() {
-    'use strict';
-
-    // ========================================
-    // LOADING SCREEN
-    // ========================================
-    window.addEventListener('load', function() {
-        setTimeout(function() {
-            const loadingScreen = document.getElementById('loadingScreen');
-            if (loadingScreen) {
-                loadingScreen.classList.add('hidden');
-            }
-        }, 1000);
-    });
-
-    // ========================================
-    // INITIALIZE AOS
-    // ========================================
-    if (typeof AOS !== 'undefined') {
-        AOS.init({
-            duration: 800,
-            easing: 'ease-out-cubic',
-            once: true,
-            offset: 100,
-            delay: 100,
-        });
-    }
-
-    // ========================================
-    // CUSTOM CURSOR
-    // ========================================
-    const cursorDot = document.getElementById('cursorDot');
-    const cursorOutline = document.getElementById('cursorOutline');
-
-    if (cursorDot && cursorOutline && window.innerWidth > 768) {
-        let mouseX = 0;
-        let mouseY = 0;
-        let outlineX = 0;
-        let outlineY = 0;
-
-        document.addEventListener('mousemove', function(e) {
-            mouseX = e.clientX;
-            mouseY = e.clientY;
-
-            cursorDot.style.left = mouseX + 'px';
-            cursorDot.style.top = mouseY + 'px';
-        });
-
-        // Smooth follow for outline
-        function animateCursor() {
-            const distX = mouseX - outlineX;
-            const distY = mouseY - outlineY;
-
-            outlineX += distX * 0.15;
-            outlineY += distY * 0.15;
-
-            cursorOutline.style.left = outlineX + 'px';
-            cursorOutline.style.top = outlineY + 'px';
-
-            requestAnimationFrame(animateCursor);
-        }
-
-        animateCursor();
-
-        // Cursor effects on hover
-        const hoverElements = document.querySelectorAll('a, button, .project-card-modern, .certificate-card-modern');
-        hoverElements.forEach(element => {
-            element.addEventListener('mouseenter', function() {
-                cursorDot.style.transform = 'translate(-50%, -50%) scale(1.5)';
-                cursorOutline.style.transform = 'translate(-50%, -50%) scale(1.5)';
-            });
-
-            element.addEventListener('mouseleave', function() {
-                cursorDot.style.transform = 'translate(-50%, -50%) scale(1)';
-                cursorOutline.style.transform = 'translate(-50%, -50%) scale(1)';
-            });
-        });
-    } else if (cursorDot && cursorOutline) {
-        // Hide custom cursor on mobile
-        cursorDot.style.display = 'none';
-        cursorOutline.style.display = 'none';
-    }
-
-    // ========================================
-    // NAVBAR SCROLL EFFECT
-    // ========================================
-    const navbar = document.getElementById('mainNav');
-    let lastScroll = 0;
-
-    window.addEventListener('scroll', function() {
-        const currentScroll = window.pageYOffset;
-
-        // Add scrolled class
-        if (currentScroll > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-
-        // Hide/show navbar on scroll
-        if (currentScroll > lastScroll && currentScroll > 500) {
-            navbar.style.transform = 'translateY(-100%)';
-        } else {
-            navbar.style.transform = 'translateY(0)';
-        }
-
-        lastScroll = currentScroll;
-    });
-
-    // ========================================
-    // SMOOTH SCROLL & ACTIVE NAV
-    // ========================================
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            const href = this.getAttribute('href');
-            
-            if (href.startsWith('#')) {
-                e.preventDefault();
-                const target = document.querySelector(href);
-                
-                if (target) {
-                    const navbarHeight = navbar.offsetHeight;
-                    const targetPosition = target.offsetTop - navbarHeight - 20;
-                    
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-
-                    // Close mobile menu
-                    const navbarCollapse = document.querySelector('.navbar-collapse');
-                    if (navbarCollapse.classList.contains('show')) {
-                        const bsCollapse = new bootstrap.Collapse(navbarCollapse);
-                        bsCollapse.hide();
-                    }
-                }
-            }
-        });
-    });
-
-    // Active nav highlighting
-    function highlightActiveSection() {
-        const scrollPos = window.pageYOffset + 100;
-        const sections = document.querySelectorAll('section[id]');
-
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
-            const sectionId = section.getAttribute('id');
-
-            if (scrollPos >= sectionTop && scrollPos < sectionTop + sectionHeight) {
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href') === `#${sectionId}`) {
-                        link.classList.add('active');
-                    }
-                });
-            }
-        });
-    }
-
-    window.addEventListener('scroll', highlightActiveSection);
-
-    // ========================================
-    // COUNTER ANIMATION
-    // ========================================
-    const counters = document.querySelectorAll('.card-number[data-target]');
-    const counterSpeed = 200;
-
-    const animateCounter = (counter) => {
-        const target = +counter.getAttribute('data-target');
-        const increment = target / counterSpeed;
-
-        const updateCounter = () => {
-            const current = +counter.innerText;
-
-            if (current < target) {
-                counter.innerText = Math.ceil(current + increment);
-                setTimeout(updateCounter, 10);
-            } else {
-                counter.innerText = target + '+';
-            }
-        };
-
-        updateCounter();
-    };
-
-    const observerOptions = {
-        threshold: 0.5,
-        rootMargin: '0px'
-    };
-
-    const counterObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                animateCounter(entry.target);
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    counters.forEach(counter => {
-        counterObserver.observe(counter);
-    });
-
-    // ========================================
-    // SKILL BARS ANIMATION
-    // ========================================
-    const skillBars = document.querySelectorAll('.skill-progress[data-progress]');
-
-    const skillObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const progress = entry.target.getAttribute('data-progress');
-                entry.target.style.width = progress + '%';
-                skillObserver.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    skillBars.forEach(bar => {
-        skillObserver.observe(bar);
-    });
-
-    // ========================================
-    // FORM SUBMISSION
-    // ========================================
-    const contactForm = document.getElementById('contactForm');
-
-    if (contactForm) {
-        contactForm.addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            // Get form data
-            const formData = {
-                name: document.getElementById('name').value,
-                email: document.getElementById('email').value,
-                subject: document.getElementById('subject').value,
-                message: document.getElementById('message').value
-            };
-
-            // Show success message (customize this based on your backend)
-            showNotification('success', 'Thank you for your message! I will get back to you soon.');
-
-            // Reset form
-            contactForm.reset();
-        });
-    }
-
-    // ========================================
-    // NOTIFICATION SYSTEM
-    // ========================================
-    function showNotification(type, message) {
-        // Create notification element
-        const notification = document.createElement('div');
-        notification.className = `notification notification-${type}`;
-        notification.innerHTML = `
-            <div class="notification-content">
-                <i class="fas fa-${type === 'success' ? 'check-circle' : 'exclamation-circle'}"></i>
-                <span>${message}</span>
-            </div>
-        `;
-
-        // Add styles
-        notification.style.cssText = `
-            position: fixed;
-            top: 100px;
-            right: 30px;
-            background: ${type === 'success' ? 'linear-gradient(135deg, #10B981 0%, #059669 100%)' : 'linear-gradient(135deg, #EF4444 0%, #DC2626 100%)'};
-            color: white;
-            padding: 20px 30px;
-            border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            z-index: 10000;
-            animation: slideInRight 0.4s ease, slideOutRight 0.4s ease 2.6s;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-weight: 600;
-        `;
-
-        document.body.appendChild(notification);
-
-        // Remove after 3 seconds
-        setTimeout(() => {
-            notification.remove();
-        }, 3000);
-    }
-
-    // Add notification animations
-    const style = document.createElement('style');
-    style.innerHTML = `
-        @keyframes slideInRight {
-            from {
-                transform: translateX(400px);
-                opacity: 0;
-            }
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
-        @keyframes slideOutRight {
-            from {
-                transform: translateX(0);
-                opacity: 1;
-            }
-            to {
-                transform: translateX(400px);
-                opacity: 0;
-            }
-        }
-
-        .notification-content {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .notification-content i {
-            font-size: 24px;
-        }
-    `;
-    document.head.appendChild(style);
-
-    // ========================================
-    // BACK TO TOP BUTTON
-    // ========================================
-    const backToTop = document.getElementById('backToTop');
-
-    if (backToTop) {
-        window.addEventListener('scroll', function() {
-            if (window.pageYOffset > 300) {
-                backToTop.classList.add('show');
-            } else {
-                backToTop.classList.remove('show');
-            }
-        });
-
-        backToTop.addEventListener('click', function() {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-    }
-
-    // ========================================
-    // PARALLAX EFFECT
-    // ========================================
-    window.addEventListener('scroll', function() {
-        const scrolled = window.pageYOffset;
-
-        // Parallax for hero section
-        const heroOrbs = document.querySelectorAll('.hero-gradient-orb');
-        heroOrbs.forEach((orb, index) => {
-            const speed = 0.5 + (index * 0.1);
-            orb.style.transform = `translateY(${scrolled * speed}px)`;
-        });
-    });
-
-    // ========================================
-    // TYPED TEXT EFFECT (Optional Enhancement)
-    // ========================================
-    function typeWriter(element, texts, speed = 100) {
-        let textIndex = 0;
-        let charIndex = 0;
-        let isDeleting = false;
-
-        function type() {
-            const currentText = texts[textIndex];
-            
-            if (isDeleting) {
-                element.textContent = currentText.substring(0, charIndex - 1);
-                charIndex--;
-            } else {
-                element.textContent = currentText.substring(0, charIndex + 1);
-                charIndex++;
-            }
-
-            if (!isDeleting && charIndex === currentText.length) {
-                isDeleting = true;
-                setTimeout(type, 2000);
-            } else if (isDeleting && charIndex === 0) {
-                isDeleting = false;
-                textIndex = (textIndex + 1) % texts.length;
-                setTimeout(type, 500);
-            } else {
-                setTimeout(type, isDeleting ? speed / 2 : speed);
-            }
-        }
-
-        type();
-    }
-
-    // Example usage (commented out by default)
-    // const typedElement = document.querySelector('.hero-subtitle');
-    // if (typedElement) {
-    //     typeWriter(typedElement, ['Civil Engineer', 'Design Expert', 'Creative Professional'], 100);
-    // }
-
-    // ========================================
-    // MAGNETIC BUTTONS EFFECT
-    // ========================================
-    const magneticButtons = document.querySelectorAll('.btn-premium');
-
-    magneticButtons.forEach(button => {
-        button.addEventListener('mousemove', function(e) {
-            const rect = button.getBoundingClientRect();
-            const x = e.clientX - rect.left - rect.width / 2;
-            const y = e.clientY - rect.top - rect.height / 2;
-
-            button.style.transform = `translate(${x * 0.2}px, ${y * 0.2}px)`;
-        });
-
-        button.addEventListener('mouseleave', function() {
-            button.style.transform = 'translate(0, 0)';
-        });
-    });
-
-    // ========================================
-    // PROJECT CARD 3D TILT EFFECT
-    // ========================================
-    const projectCards = document.querySelectorAll('.project-card-modern');
-
-    projectCards.forEach(card => {
-        card.addEventListener('mousemove', function(e) {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
-
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-
-            const rotateX = (y - centerY) / 20;
-            const rotateY = (centerX - x) / 20;
-
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-15px)`;
-        });
-
-        card.addEventListener('mouseleave', function() {
-            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) translateY(0)';
-        });
-    });
-
-    // ========================================
-    // LAZY LOADING IMAGES (if needed)
-    // ========================================
-    if ('IntersectionObserver' in window) {
-        const imageObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const img = entry.target;
-                    if (img.dataset.src) {
-                        img.src = img.dataset.src;
-                        img.classList.add('loaded');
-                        observer.unobserve(img);
-                    }
-                }
-            });
-        });
-
-        const lazyImages = document.querySelectorAll('img[data-src]');
-        lazyImages.forEach(img => imageObserver.observe(img));
-    }
-
-    // ========================================
-    // PREVENT ANIMATION ON PAGE LOAD
-    // ========================================
-    window.addEventListener('load', function() {
-        document.body.classList.add('loaded');
-    });
-
-    // ========================================
-    // MOBILE MENU ENHANCEMENTS
-    // ========================================
-    const navbarToggler = document.querySelector('.navbar-toggler');
-    const navbarCollapse = document.querySelector('.navbar-collapse');
-
-    if (navbarToggler && navbarCollapse) {
-        navbarToggler.addEventListener('click', function() {
-            navbarToggler.classList.toggle('active');
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', function(e) {
-            if (!navbar.contains(e.target) && navbarCollapse.classList.contains('show')) {
-                const bsCollapse = new bootstrap.Collapse(navbarCollapse);
-                bsCollapse.hide();
-                navbarToggler.classList.remove('active');
-            }
-        });
-    }
-
-    // ========================================
-    // SCROLL REVEAL ANIMATIONS
-    // ========================================
-    const revealElements = document.querySelectorAll('.info-card-modern, .skill-category-card, .project-card-modern, .certificate-card-modern');
-
-    const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
-                entry.target.style.transform = 'translateY(0)';
-            }
-        });
-    }, {
-        threshold: 0.1
-    });
-
-    revealElements.forEach(element => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(40px)';
-        element.style.transition = 'all 0.6s ease';
-        revealObserver.observe(element);
-    });
-
-    // ========================================
-    // FORM VALIDATION
-    // ========================================
-    const formInputs = document.querySelectorAll('.form-input, .form-textarea');
-
-    formInputs.forEach(input => {
-        input.addEventListener('blur', function() {
-            if (this.value.trim() === '' && this.hasAttribute('required')) {
-                this.style.borderColor = '#EF4444';
-            } else {
-                this.style.borderColor = '';
-            }
-        });
-
-        input.addEventListener('input', function() {
-            if (this.style.borderColor === 'rgb(239, 68, 68)') {
-                this.style.borderColor = '';
-            }
-        });
-    });
-
-    // ========================================
-    // PERFORMANCE OPTIMIZATION
-    // ========================================
-    
-    // Debounce function for scroll events
-    function debounce(func, wait = 10) {
-        let timeout;
-        return function executedFunction(...args) {
-            const later = () => {
-                clearTimeout(timeout);
-                func(...args);
-            };
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
-        };
-    }
-
-    // Apply debounce to scroll event handlers
-    window.addEventListener('scroll', debounce(function() {
-        highlightActiveSection();
-    }, 10));
-
-    // ========================================
-    // CONSOLE MESSAGE
-    // ========================================
-    console.log('%c✨ Welcome to Farhad Saeed\'s Portfolio ✨', 'color: #0EA5E9; font-size: 20px; font-weight: bold;');
-    console.log('%cLooking for a talented Civil Engineer & Designer?', 'color: #6366F1; font-size: 14px;');
-    console.log('%cLet\'s connect: farhadsaeed0314@gmail.com', 'color: #8B5CF6; font-size: 14px;');
-
-    // ========================================
-    // EASTER EGG (Optional Fun Feature)
-    // ========================================
-    let konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
-    let konamiIndex = 0;
-
-    document.addEventListener('keydown', function(e) {
-        if (e.key === konamiCode[konamiIndex]) {
-            konamiIndex++;
-            if (konamiIndex === konamiCode.length) {
-                activateEasterEgg();
-                konamiIndex = 0;
-            }
-        } else {
-            konamiIndex = 0;
-        }
-    });
-
-    function activateEasterEgg() {
-        // Fun confetti effect or special message
-        showNotification('success', '🎉 You found the secret! You\'re awesome!');
-        
-        // Add temporary rainbow effect
-        document.body.style.animation = 'rainbow 2s linear';
-        setTimeout(() => {
-            document.body.style.animation = '';
-        }, 2000);
-    }
-
-})();
-    </script>
 </body>
 </html>
