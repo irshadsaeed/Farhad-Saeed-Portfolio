@@ -2077,7 +2077,7 @@ section {
 
 .footer-bottom {
     text-align: center;
-    padding-top: clamp(1.5rem, 3vw, 2rem);
+    padding-top: clamp(13px, 3vw, 13px);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
