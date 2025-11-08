@@ -258,10 +258,10 @@ body {
 .navbar-brand {
     display: flex;
     align-items: center;
-    gap: clamp(8px, 2vw, 14px);
+    gap: clamp(8px, 2vw, 5px);
     font-family: 'Space Grotesk', sans-serif;
     font-weight: 800;
-    font-size: clamp(18px, 3vw, 26px);
+    font-size: clamp(18px, 3vw, 6px);
     transition: all 0.3s ease;
     position: relative;
     padding: 8px 12px;
