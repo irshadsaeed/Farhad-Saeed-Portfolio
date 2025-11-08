@@ -1992,9 +1992,8 @@ section {
 }
 
 .footer-tagline {
-    font-size: clamp(0.9375rem, 1.8vw, 1rem); /* 15px to 16px */
+    font-size: clamp(0.9375rem, 1.8vw, 14px); /* 15px to 16px */
     color: var(--text-muted);
-    font-style: italic;
 }
 
 .footer-links-section {
