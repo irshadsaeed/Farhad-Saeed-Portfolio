@@ -1,330 +1,374 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=5.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Farhad Saeed - Expert Civil Engineer & Design Specialist | AutoCAD, 3D Visualization, Graphic Design"
+      content="Farhad Saeed — Civil Engineer & Design Specialist. Expert in AutoCAD, SketchUp 3D Visualization, Graphic Design, and Safety Engineering."
     />
     <meta
       name="keywords"
-      content="Civil Engineer, AutoCAD, 3D Design, Graphic Design, SketchUp, Portfolio"
+      content="Civil Engineer, AutoCAD, SketchUp, 3D Visualization, Graphic Design, NEBOSH, HSE, Farhad Saeed"
     />
     <meta name="author" content="Farhad Saeed" />
-    <meta name="theme-color" content="#0EA5E9" />
+    <meta name="theme-color" content="#0d9488" />
+    <title>Farhad Saeed — Civil Engineer & Design Specialist</title>
 
-    <title>Farhad Saeed | Civil Engineer & Design Expert</title>
-
-    <!-- Preconnect for performance -->
+    <!-- Fonts: Cormorant Garamond (display) + Figtree (body) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
-
-    <!-- Bootstrap CSS -->
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
-    />
-
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <!-- Google Fonts - Inter & Space Grotesk -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Figtree:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
 
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
 
-    <!-- Custom CSS -->
-    <link href="index.css" rel="stylesheet" />
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="farhadlogo.png" />
+    <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <!-- Loading Screen -->
-    <div class="loading-screen" id="loadingScreen">
-      <div class="loader-container">
-        <div class="loader"></div>
-        <div class="loader-text">Loading Excellence...</div>
+    <!-- Page Loader -->
+    <div class="loader-screen" id="loaderScreen">
+      <div class="loader-body">
+        <div class="loader-blueprint">
+          <div class="bp-grid"></div>
+          <div class="bp-cross"></div>
+        </div>
+        <div class="loader-name">Farhad<span>.</span></div>
+        <div class="loader-sub">Civil Engineer & Design Specialist</div>
+        <div class="loader-progress-wrap">
+          <div class="loader-progress-bar" id="loaderBar"></div>
+        </div>
       </div>
     </div>
 
-    <!-- Custom Cursor (Desktop Only) -->
-    <div class="cursor-dot" id="cursorDot"></div>
-    <div class="cursor-outline" id="cursorOutline"></div>
+    <!-- Custom Cursor -->
+    <div class="cur-ring" id="curRing"></div>
+    <div class="cur-dot" id="curDot"></div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand" href="#home">
-          <img
-            src="farhadlogo.png"
-            alt="Farhad Saeed Logo"
-            class="logo-image"
-            loading="lazy"
-          />
-          <span class="brand-line"></span>
+    <!-- Background -->
+    <div class="site-bg">
+      <div class="bg-blueprint-grid"></div>
+      <div class="bg-noise"></div>
+      <div class="bg-blob b1"></div>
+      <div class="bg-blob b2"></div>
+      <div class="bg-blob b3"></div>
+    </div>
+
+    <!-- ═══════════════ NAVBAR ═══════════════ -->
+    <nav class="site-nav" id="siteNav">
+      <div class="nav-wrap">
+        <a href="#home" class="nav-logo">
+          <div class="logo-emblem">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none">
+              <rect
+                x="1"
+                y="1"
+                width="9"
+                height="9"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <rect
+                x="12"
+                y="1"
+                width="9"
+                height="9"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <rect
+                x="1"
+                y="12"
+                width="9"
+                height="9"
+                stroke="currentColor"
+                stroke-width="1.5"
+              />
+              <rect x="12" y="12" width="9" height="9" fill="currentColor" />
+            </svg>
+          </div>
+          <span class="logo-txt">Farhad</span>
         </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+
+        <button class="nav-burger" id="navBurger" aria-label="Open menu">
+          <span></span><span></span><span></span>
         </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNav"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#experience">Experience</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#certificates">Certificates</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
+
+        <div class="nav-links-wrap" id="navLinksWrap">
+          <ul class="nav-links">
+            <li><a href="#home" class="nl active">Home</a></li>
+            <li><a href="#about" class="nl">About</a></li>
+            <li><a href="#skills" class="nl">Skills</a></li>
+            <li><a href="#experience" class="nl">Experience</a></li>
+            <li><a href="#projects" class="nl">Projects</a></li>
+            <li><a href="#certificates" class="nl">Certs</a></li>
+            <li><a href="#education" class="nl">Education</a></li>
+            <li><a href="#contact" class="nl">Contact</a></li>
           </ul>
+          <a href="#contact" class="nav-cta"
+            >Hire Me <i class="bi bi-arrow-up-right"></i
+          ></a>
         </div>
       </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero-section">
-      <div class="hero-background">
-        <div class="hero-grid"></div>
-        <div class="hero-gradient-orb orb-1"></div>
-        <div class="hero-gradient-orb orb-2"></div>
-        <div class="hero-gradient-orb orb-3"></div>
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <section id="home" class="hero">
+      <div class="hero-blueprint-lines">
+        <span class="hbl hbl-h1"></span>
+        <span class="hbl hbl-h2"></span>
+        <span class="hbl hbl-v1"></span>
+        <span class="hbl hbl-v2"></span>
       </div>
+      <div class="hero-deco-cross dc1">+</div>
+      <div class="hero-deco-cross dc2">+</div>
+      <div class="hero-deco-cross dc3">×</div>
+      <div class="hero-deco-circle dcc1"></div>
+      <div class="hero-deco-circle dcc2"></div>
 
-      <div class="container">
-        <div class="row align-items-center min-vh-100 g-4 g-lg-5">
-          <div
-            class="col-lg-6 order-2 order-lg-1"
-            data-aos="fade-right"
-            data-aos-duration="1000"
-          >
-            <div class="hero-content">
-              <h1 class="hero-title">
-                Hi, I'm <span class="gradient-text">Farhad Saeed</span>
-              </h1>
-              <h2 class="hero-subtitle">
-                Civil Engineer | AI & Design Innovator
-              </h2>
-              <p class="hero-description">
-                Bridging engineering precision with creative innovation — I
-                specialize in Civil Engineering, AutoCAD, SketchUp, and advanced
-                AI-driven design. Passionate about transforming concepts into
-                high-impact visual and structural realities through modern 3D
-                visualization, smart design thinking, and cutting-edge
-                technology.
-              </p>
-
-              <div class="hero-buttons">
-                <a href="#contact" class="btn-hero-primary">
-                  <span class="btn-text">Let's Work Together</span>
-                  <span class="btn-icon"><i class="fas fa-rocket"></i></span>
-                  <div class="btn-particles"></div>
-                </a>
-                <a href="#projects" class="btn-hero-secondary">
-                  <span class="btn-text">View Projects</span>
-                  <span class="btn-icon"><i class="fas fa-briefcase"></i></span>
-                </a>
-              </div>
-
-              <div class="hero-stats">
-                <div class="stat-item">
-                  <div class="stat-number">100+</div>
-                  <div class="stat-label">Projects</div>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                  <div class="stat-number">9+</div>
-                  <div class="stat-label">Certifications</div>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                  <div class="stat-number">100%</div>
-                  <div class="stat-label">Satisfaction</div>
-                </div>
-              </div>
-            </div>
+      <div class="hero-container">
+        <div class="hero-left anim-fade-right">
+          <div class="hero-tag">
+            <div class="tag-pulse"></div>
+            <span>Open to Freelance Projects</span>
           </div>
-          <div
-            class="col-lg-6 order-1 order-lg-2"
-            data-aos="fade-left"
-            data-aos-duration="1000"
-            data-aos-delay="200"
-          >
-            <div class="hero-image-container">
-              <div class="image-backdrop"></div>
-              <div class="image-wrapper">
-                <img
-                  src="farhad1.jpeg"
-                  alt="Farhad Saeed - Civil Engineer"
-                  class="profile-image"
-                  loading="eager"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <!-- About Section -->
-    <section id="about" class="about-section">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">About Me</h2>
-          <p class="section-subtitle">
-            Passionate civil engineer with expertise in design, visualization,
-            and creative solutions
+          <p class="hero-eyebrow">Civil Engineer & Design Specialist</p>
+
+          <h1 class="hero-name">
+            <span class="hn-first">Farhad</span>
+            <span class="hn-last">Saeed</span>
+          </h1>
+
+          <p class="hero-tagline">
+            Where <em>Precision Engineering</em> Meets<br />
+            <em>Creative Design Vision</em>
           </p>
+
+          <p class="hero-desc">
+            Expert in AutoCAD 2D/3D, SketchUp modeling, V-Ray rendering, and
+            Adobe Creative Suite. Transforming complex structural concepts into
+            stunning visual realities that exceed expectations.
+          </p>
+
+          <div class="hero-btns">
+            <a href="#projects" class="hbtn hbtn-primary">
+              <span>View Portfolio</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </a>
+            <a href="#contact" class="hbtn hbtn-outline">
+              <span>Let's Collaborate</span>
+              <i class="bi bi-chat-dots"></i>
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="hstat">
+              <span class="hstat-num" data-count="100">0</span><em>+</em>
+              <span class="hstat-lbl">Projects</span>
+            </div>
+            <div class="hstat-sep"></div>
+            <div class="hstat">
+              <span class="hstat-num" data-count="9">0</span><em>+</em>
+              <span class="hstat-lbl">Certificates</span>
+            </div>
+            <div class="hstat-sep"></div>
+            <div class="hstat">
+              <span class="hstat-num" data-count="100">0</span><em>%</em>
+              <span class="hstat-lbl">Satisfaction</span>
+            </div>
+          </div>
         </div>
 
-        <div class="row align-items-center g-4 g-lg-5">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <div class="about-content">
-              <h3 class="about-heading">
-                Turning Ideas Into
-                <span class="gradient-text">Visual Reality</span>
-              </h3>
-              <p class="about-text">
-                A dedicated professional specializing in Civil Engineering,
-                AutoCAD 2D and 3D design, Graphic Design, and Safety
-                Engineering. My passion lies in transforming complex ideas into
-                stunning visual realities that exceed expectations.
-              </p>
-              <p class="about-text">
-                Through dedication, teamwork, and a commitment to excellence, I
-                strive to deliver innovative projects that promote efficiency,
-                safety, and creativity while continuously developing technical
-                expertise.
-              </p>
+        <div class="hero-right anim-fade-left">
+          <div class="hero-img-stage">
+            <div class="img-blueprint-frame">
+              <span class="ibf-corner c-tl"></span>
+              <span class="ibf-corner c-tr"></span>
+              <span class="ibf-corner c-bl"></span>
+              <span class="ibf-corner c-br"></span>
+              <span class="ibf-label">PROFILE / 01</span>
+              <span class="ibf-scale">SCALE 1:1</span>
+            </div>
+            <div class="img-glow-ring"></div>
+            <div class="img-circle-frame">
+              <img
+                src="farhad1.jpeg"
+                alt="Farhad Saeed — Civil Engineer"
+                class="profile-photo"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="photo-fallback">
+                <i class="bi bi-person-fill"></i>
+              </div>
+            </div>
+            <!-- Floating expertise cards -->
+            <div class="exp-chip chip-1">
+              <i class="bi bi-drafting-compass"></i>
+              <span>AutoCAD Expert</span>
+            </div>
+            <div class="exp-chip chip-2">
+              <i class="bi bi-box"></i>
+              <span>3D Visualization</span>
+            </div>
+            <div class="exp-chip chip-3">
+              <i class="bi bi-shield-check"></i>
+              <span>NEBOSH Certified</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-              <div class="about-features">
-                <div class="feature-item">
-                  <div class="feature-icon">
-                    <i class="fas fa-check"></i>
-                  </div>
-                  <div class="feature-text">
-                    <h4>Technical Excellence</h4>
-                    <p>
-                      Mastery in AutoCAD, SketchUp, and Adobe Creative Suite
-                    </p>
-                  </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll to explore</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ MARQUEE STRIP ═══════════════ -->
+    <div class="marquee-strip">
+      <div class="mq-track">
+        <span class="mq-item"><i class="bi bi-dot"></i>AutoCAD 2D & 3D</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>SketchUp</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>V-Ray Rendering</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>Adobe Illustrator</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>Adobe Express</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>Civil Engineering</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>NEBOSH</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>HSE Engineering</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>Floor Plans</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>Structural Design</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>Brand Identity</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>Interior Design</span>
+        <!-- Duplicate -->
+        <span class="mq-item"><i class="bi bi-dot"></i>AutoCAD 2D & 3D</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>SketchUp</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>V-Ray Rendering</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>Adobe Illustrator</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>Adobe Express</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>Civil Engineering</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>NEBOSH</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>HSE Engineering</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>Floor Plans</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>Structural Design</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>Brand Identity</span>
+        <span class="mq-item"><i class="bi bi-dot"></i>Interior Design</span>
+      </div>
+    </div>
+
+    <!-- ═══════════════ ABOUT ═══════════════ -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual reveal-l">
+            <div class="av-blueprint-card">
+              <div class="avbc-header">
+                <span class="avbc-ref">REF: FS-PROFILE-001</span>
+                <span class="avbc-date">2025</span>
+              </div>
+              <img
+                src="farhad1.jpeg"
+                alt="Farhad Saeed"
+                class="av-portrait"
+                onerror="
+                  this.style.background = 'var(--s3)';
+                  this.style.minHeight = '320px';
+                "
+              />
+              <div class="avbc-footer">
+                <span class="avbc-label">FARHAD SAEED</span>
+                <span class="avbc-sub">CIVIL ENGINEER</span>
+              </div>
+            </div>
+            <div class="av-stat-block asb-1">
+              <span class="asb-n" data-count="100">0</span><em>+</em>
+              <span class="asb-l">Projects Done</span>
+            </div>
+            <div class="av-stat-block asb-2">
+              <span class="asb-n" data-count="9">0</span><em>+</em>
+              <span class="asb-l">Certifications</span>
+            </div>
+            <div class="av-deco-line adl-h"></div>
+            <div class="av-deco-line adl-v"></div>
+          </div>
+
+          <div class="about-text reveal-r">
+            <div class="sec-eyebrow"><span class="ey-line"></span>About Me</div>
+            <h2 class="sec-title">
+              Turning Ideas Into <em>Visual Reality</em>
+            </h2>
+            <p class="about-p">
+              A dedicated professional specializing in Civil Engineering,
+              AutoCAD 2D and 3D design, Graphic Design, and Safety Engineering.
+              My passion lies in transforming complex structural concepts into
+              stunning visual realities.
+            </p>
+            <p class="about-p">
+              Through dedication, teamwork, and commitment to excellence, I
+              strive to deliver innovative projects that promote efficiency,
+              safety, and creativity — continuously developing technical
+              expertise to stay at the forefront of the industry.
+            </p>
+
+            <div class="about-features">
+              <div class="af-item">
+                <div class="af-icon"><i class="bi bi-gear-fill"></i></div>
+                <div class="af-text">
+                  <h4>Technical Excellence</h4>
+                  <p>
+                    Mastery in AutoCAD, SketchUp, V-Ray, and Adobe Creative
+                    Suite for precision outputs.
+                  </p>
                 </div>
-                <div class="feature-item">
-                  <div class="feature-icon">
-                    <i class="fas fa-check"></i>
-                  </div>
-                  <div class="feature-text">
-                    <h4>Creative Innovation</h4>
-                    <p>
-                      Unique design solutions that blend functionality with
-                      aesthetics
-                    </p>
-                  </div>
+              </div>
+              <div class="af-item">
+                <div class="af-icon"><i class="bi bi-lightbulb-fill"></i></div>
+                <div class="af-text">
+                  <h4>Creative Innovation</h4>
+                  <p>
+                    Unique design solutions blending structural functionality
+                    with aesthetic beauty.
+                  </p>
                 </div>
-                <div class="feature-item">
-                  <div class="feature-icon">
-                    <i class="fas fa-check"></i>
-                  </div>
-                  <div class="feature-text">
-                    <h4>Client Satisfaction</h4>
-                    <p>
-                      100+ successful projects with exceptional client feedback
-                    </p>
-                  </div>
+              </div>
+              <div class="af-item">
+                <div class="af-icon">
+                  <i class="bi bi-person-check-fill"></i>
+                </div>
+                <div class="af-text">
+                  <h4>Client Satisfaction</h4>
+                  <p>
+                    100+ completed projects with a consistent 100% client
+                    satisfaction record.
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
 
-          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
-            <div class="about-cards">
-              <div
-                class="info-card-modern"
-                data-aos="zoom-in"
-                data-aos-delay="300"
-              >
-                <div class="card-icon">
-                  <i class="fas fa-trophy"></i>
-                </div>
-                <div class="card-content">
-                  <h3 class="card-number" data-target="100">0</h3>
-                  <p class="card-label">Completed Projects</p>
-                </div>
-                <div class="card-glow"></div>
+            <div class="about-meta-row">
+              <div class="amr-item">
+                <i class="bi bi-geo-alt-fill"></i
+                ><span>Timergara, Dir Lower, KPK, Pakistan</span>
               </div>
-
-              <div
-                class="info-card-modern"
-                data-aos="zoom-in"
-                data-aos-delay="400"
-              >
-                <div class="card-icon">
-                  <i class="fas fa-certificate"></i>
-                </div>
-                <div class="card-content">
-                  <h3 class="card-number" data-target="9">0</h3>
-                  <p class="card-label">Professional Certifications</p>
-                </div>
-                <div class="card-glow"></div>
+              <div class="amr-item">
+                <i class="bi bi-envelope-fill"></i
+                ><span>farhadsaeed0314@gmail.com</span>
               </div>
-
-              <div
-                class="info-card-modern"
-                data-aos="zoom-in"
-                data-aos-delay="500"
-              >
-                <div class="card-icon">
-                  <i class="fas fa-smile"></i>
-                </div>
-                <div class="card-content">
-                  <h3 class="card-number" data-target="100">0</h3>
-                  <p class="card-label">Client Satisfaction Rate</p>
-                </div>
-                <div class="card-glow"></div>
+              <div class="amr-item">
+                <i class="bi bi-telephone-fill"></i><span>0315 978 4820</span>
+              </div>
+              <div class="amr-item">
+                <i class="bi bi-mortarboard-fill"></i
+                ><span>Diploma of Associate Engineering (Civil)</span>
               </div>
             </div>
           </div>
@@ -332,243 +376,232 @@
       </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section">
+    <!-- ═══════════════ SKILLS ═══════════════ -->
+    <section id="skills" class="section skills-section alt-bg">
       <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">Professional Skills</h2>
-          <p class="section-subtitle">
+        <div class="sec-header centered reveal">
+          <div class="sec-eyebrow">
+            <span class="ey-line"></span>My Expertise
+          </div>
+          <h2 class="sec-title">Professional <em>Skills</em></h2>
+          <p class="sec-desc">
             A comprehensive toolkit for engineering excellence and creative
-            design
+            design mastery across multiple disciplines.
           </p>
         </div>
 
         <div class="skills-grid">
-          <!-- CAD & 3D Design -->
-          <div
-            class="skill-category-card"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="category-header">
-              <div class="category-icon">
-                <i class="fas fa-drafting-compass"></i>
-              </div>
-              <h3 class="category-title">CAD & 3D Design</h3>
+          <div class="skill-card reveal" style="--d: 0.1s">
+            <div class="skc-top">
+              <div class="skc-icon"><i class="bi bi-pencil-square"></i></div>
+              <h3>CAD & 3D Design</h3>
             </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <span class="skill-name">AutoCAD</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="95"></div>
+            <div class="skill-bars">
+              <div class="sb-item">
+                <span class="sb-name">AutoCAD</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="95"></div>
                 </div>
+                <span class="sb-pct">95%</span>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">SketchUp</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="90"></div>
+              <div class="sb-item">
+                <span class="sb-name">SketchUp</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="90"></div>
                 </div>
+                <span class="sb-pct">90%</span>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">3D Modeling</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="88"></div>
+              <div class="sb-item">
+                <span class="sb-name">3D Modeling</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="88"></div>
                 </div>
+                <span class="sb-pct">88%</span>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">V-ray Rendering</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="85"></div>
+              <div class="sb-item">
+                <span class="sb-name">V-Ray Rendering</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="85"></div>
                 </div>
+                <span class="sb-pct">85%</span>
               </div>
             </div>
-            <div class="category-tags">
-              <span class="skill-tag">Floor Plans</span>
-              <span class="skill-tag">Elevations</span>
-              <span class="skill-tag">Sections</span>
-              <span class="skill-tag">Interior Design</span>
-              <span class="skill-tag">Landscape</span>
+            <div class="skc-tags">
+              <span>Floor Plans</span><span>Elevations</span
+              ><span>Sections</span><span>Interior</span><span>Landscape</span>
             </div>
           </div>
 
-          <!-- Graphic Design -->
-          <div
-            class="skill-category-card"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div class="category-header">
-              <div class="category-icon">
-                <i class="fas fa-palette"></i>
-              </div>
-              <h3 class="category-title">Graphic Design</h3>
+          <div class="skill-card reveal" style="--d: 0.18s">
+            <div class="skc-top">
+              <div class="skc-icon"><i class="bi bi-palette-fill"></i></div>
+              <h3>Graphic Design</h3>
             </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <span class="skill-name">Adobe Illustrator</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="92"></div>
+            <div class="skill-bars">
+              <div class="sb-item">
+                <span class="sb-name">Adobe Illustrator</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="92"></div>
                 </div>
+                <span class="sb-pct">92%</span>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">Adobe Express</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="88"></div>
+              <div class="sb-item">
+                <span class="sb-name">Adobe Express</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="88"></div>
                 </div>
+                <span class="sb-pct">88%</span>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">Logo Design</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="90"></div>
+              <div class="sb-item">
+                <span class="sb-name">Logo Design</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="90"></div>
                 </div>
+                <span class="sb-pct">90%</span>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">Brand Identity</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="85"></div>
+              <div class="sb-item">
+                <span class="sb-name">Brand Identity</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="85"></div>
                 </div>
+                <span class="sb-pct">85%</span>
               </div>
             </div>
-            <div class="category-tags">
-              <span class="skill-tag">Logo Design</span>
-              <span class="skill-tag">Banners</span>
-              <span class="skill-tag">Social Media</span>
-              <span class="skill-tag">Posters</span>
-              <span class="skill-tag">CV Design</span>
+            <div class="skc-tags">
+              <span>Logos</span><span>Banners</span><span>Social Media</span
+              ><span>Posters</span><span>CV Design</span>
             </div>
           </div>
 
-          <!-- Documentation -->
-          <div
-            class="skill-category-card"
-            data-aos="fade-up"
-            data-aos-delay="300"
-          >
-            <div class="category-header">
-              <div class="category-icon">
-                <i class="fas fa-file-alt"></i>
+          <div class="skill-card reveal" style="--d: 0.26s">
+            <div class="skc-top">
+              <div class="skc-icon">
+                <i class="bi bi-file-earmark-text-fill"></i>
               </div>
-              <h3 class="category-title">Documentation</h3>
+              <h3>Documentation</h3>
             </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <span class="skill-name">MS Office Suite</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="93"></div>
+            <div class="skill-bars">
+              <div class="sb-item">
+                <span class="sb-name">MS Office Suite</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="93"></div>
                 </div>
+                <span class="sb-pct">93%</span>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">Report Writing</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="90"></div>
+              <div class="sb-item">
+                <span class="sb-name">Report Writing</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="90"></div>
                 </div>
+                <span class="sb-pct">90%</span>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">Data Management</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="88"></div>
+              <div class="sb-item">
+                <span class="sb-name">Data Management</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="88"></div>
                 </div>
+                <span class="sb-pct">88%</span>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">Project Documentation</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="92"></div>
+              <div class="sb-item">
+                <span class="sb-name">Project Docs</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="92"></div>
                 </div>
+                <span class="sb-pct">92%</span>
               </div>
             </div>
-            <div class="category-tags">
-              <span class="skill-tag">Reports</span>
-              <span class="skill-tag">Invoices</span>
-              <span class="skill-tag">Schedules</span>
-              <span class="skill-tag">Presentations</span>
+            <div class="skc-tags">
+              <span>Reports</span><span>Invoices</span><span>Schedules</span
+              ><span>Presentations</span>
             </div>
           </div>
 
-          <!-- Safety Engineering -->
-          <div
-            class="skill-category-card"
-            data-aos="fade-up"
-            data-aos-delay="400"
-          >
-            <div class="category-header">
-              <div class="category-icon">
-                <i class="fas fa-hard-hat"></i>
+          <div class="skill-card reveal" style="--d: 0.34s">
+            <div class="skc-top">
+              <div class="skc-icon">
+                <i class="bi bi-shield-fill-check"></i>
               </div>
-              <h3 class="category-title">Safety Engineering</h3>
+              <h3>Safety Engineering</h3>
             </div>
-            <div class="skills-list">
-              <div class="skill-item">
-                <span class="skill-name">Risk Assessment</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="87"></div>
+            <div class="skill-bars">
+              <div class="sb-item">
+                <span class="sb-name">Risk Assessment</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="87"></div>
                 </div>
+                <span class="sb-pct">87%</span>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">Hazard Identification</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="85"></div>
+              <div class="sb-item">
+                <span class="sb-name">Hazard Identification</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="85"></div>
                 </div>
+                <span class="sb-pct">85%</span>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">Accident Investigation</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="83"></div>
+              <div class="sb-item">
+                <span class="sb-name">Accident Investigation</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="83"></div>
                 </div>
+                <span class="sb-pct">83%</span>
               </div>
-              <div class="skill-item">
-                <span class="skill-name">Workplace Inspection</span>
-                <div class="skill-bar">
-                  <div class="skill-progress" data-progress="88"></div>
+              <div class="sb-item">
+                <span class="sb-name">Workplace Inspection</span>
+                <div class="sb-track">
+                  <div class="sb-fill" data-w="88"></div>
                 </div>
+                <span class="sb-pct">88%</span>
               </div>
             </div>
-            <div class="category-tags">
-              <span class="skill-tag">NEBOSH</span>
-              <span class="skill-tag">HSE</span>
-              <span class="skill-tag">Audits</span>
-              <span class="skill-tag">Emergency Response</span>
+            <div class="skc-tags">
+              <span>NEBOSH</span><span>HSE</span><span>Audits</span
+              ><span>Emergency Response</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="experience-section">
+    <!-- ═══════════════ EXPERIENCE ═══════════════ -->
+    <section id="experience" class="section exp-section">
       <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">Professional Experience</h2>
-          <p class="section-subtitle">
+        <div class="sec-header centered reveal">
+          <div class="sec-eyebrow">
+            <span class="ey-line"></span>Career Path
+          </div>
+          <h2 class="sec-title">Professional <em>Experience</em></h2>
+          <p class="sec-desc">
             Delivering excellence through technical expertise and creative
-            innovation
+            innovation across diverse projects.
           </p>
         </div>
 
-        <div class="experience-timeline">
-          <div class="timeline-item" data-aos="fade-up" data-aos-delay="100">
-            <div class="timeline-marker">
-              <div class="marker-inner">
-                <i class="fas fa-briefcase"></i>
-              </div>
+        <div class="exp-timeline">
+          <div class="exp-card reveal">
+            <div class="ec-marker">
+              <div class="ecm-inner"><i class="bi bi-briefcase-fill"></i></div>
+              <div class="ecm-line"></div>
             </div>
-            <div class="timeline-content">
-              <div class="experience-header">
+            <div class="ec-body">
+              <div class="ec-header">
                 <div>
-                  <h3 class="experience-title">
+                  <span class="ec-badge">Current</span>
+                  <h3 class="ec-title">
                     Designer & Visual Presentation Expert
                   </h3>
-                  <p class="experience-company">Freelance Professional</p>
+                  <p class="ec-company">
+                    <i class="bi bi-building"></i> Freelance Professional
+                  </p>
                 </div>
-                <div class="experience-badge">Current</div>
+                <div class="ec-period">2020 — Present</div>
               </div>
-
-              <div class="experience-details">
-                <div class="detail-block">
-                  <h4><i class="fas fa-code"></i> Technical Mastery</h4>
+              <div class="ec-blocks">
+                <div class="ecb-col">
+                  <h4><i class="bi bi-code-square"></i> Technical Mastery</h4>
                   <ul>
                     <li>
-                      Gained strong expertise in AutoCAD 2D designing, SketchUp
-                      3D modeling, and Adobe Illustrator color scheme designing
+                      Gained deep expertise in AutoCAD 2D designing, SketchUp 3D
+                      modeling, and Adobe Illustrator color scheme designing
                     </li>
                     <li>
                       Mastered Adobe Express poster creation for accurate,
@@ -576,41 +609,39 @@
                     </li>
                     <li>
                       Developed proficiency in creating professional visual
-                      presentations and technical drawings
+                      presentations and technical structural drawings
                     </li>
                   </ul>
                 </div>
-
-                <div class="detail-block">
+                <div class="ecb-col">
                   <h4>
-                    <i class="fas fa-project-diagram"></i> Project Excellence
+                    <i class="bi bi-diagram-3-fill"></i> Project Excellence
                   </h4>
                   <ul>
                     <li>
-                      Successfully managed and executed various house elevation
-                      projects including 2D floor layouts and 3D exterior models
+                      Successfully managed and executed house elevation projects
+                      including 2D floor layouts and 3D exterior models
                     </li>
                     <li>
                       Created professional color combinations for client
-                      presentations
+                      presentations that enhanced decision-making
                     </li>
                     <li>
-                      Ensured every design met aesthetic standards and client
-                      requirements
+                      Ensured every design met aesthetic standards and exact
+                      client requirements
                     </li>
                   </ul>
                 </div>
-
-                <div class="detail-block">
-                  <h4><i class="fas fa-chart-line"></i> Results & Impact</h4>
+                <div class="ecb-col">
+                  <h4><i class="bi bi-graph-up-arrow"></i> Results & Impact</h4>
                   <ul>
                     <li>
                       Completed over 100+ client projects with exceptional
-                      satisfaction rates
+                      satisfaction rates and repeat business
                     </li>
                     <li>
-                      Applied technical and creative skills to deliver realistic
-                      visual outputs
+                      Applied technical and creative skills to deliver
+                      realistic, photo-quality visual outputs
                     </li>
                     <li>
                       Effectively combined AutoCAD precision with SketchUp
@@ -619,218 +650,182 @@
                   </ul>
                 </div>
               </div>
+              <div class="ec-tools">
+                <span>AutoCAD</span><span>SketchUp</span><span>V-Ray</span
+                ><span>Adobe Illustrator</span><span>Adobe Express</span
+                ><span>MS Office</span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects-section">
+    <!-- ═══════════════ PROJECTS ═══════════════ -->
+    <section id="projects" class="section projects-section alt-bg">
       <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">Featured Projects</h2>
-          <p class="section-subtitle">
-            A showcase of successful projects and creative solutions
+        <div class="sec-header centered reveal">
+          <div class="sec-eyebrow"><span class="ey-line"></span>Portfolio</div>
+          <h2 class="sec-title">Featured <em>Projects</em></h2>
+          <p class="sec-desc">
+            A showcase of successful design projects — from structural drawings
+            to creative visual branding.
           </p>
         </div>
 
-        <div class="projects-grid">
-          <div
-            class="project-card-modern"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-          >
-            <div class="project-image-wrapper">
-              <div class="project-image">
-                <i class="fas fa-home"></i>
+        <div class="proj-filter reveal" id="projFilter">
+          <button class="pf-btn active" data-cat="all">All Work</button>
+          <button class="pf-btn" data-cat="cad">CAD & 3D</button>
+          <button class="pf-btn" data-cat="graphic">Graphic Design</button>
+          <button class="pf-btn" data-cat="civil">Civil</button>
+        </div>
+
+        <div class="proj-grid" id="projGrid">
+          <div class="proj-card" data-cat="cad">
+            <div class="pc-thumb">
+              <div class="pct-bg" style="--gc1: #0d9488; --gc2: #0f766e">
+                <i class="bi bi-houses-fill"></i>
               </div>
-              <div class="project-overlay">
-                <a
-                  href="#"
-                  class="project-link"
-                  aria-label="View Residential Color Scheme Project"
+              <div class="pc-overlay">
+                <a href="#" class="pco-btn"
+                  ><i class="bi bi-eye-fill"></i> View Project</a
                 >
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
               </div>
+              <span class="pc-cat-badge">CAD & 3D</span>
             </div>
-            <div class="project-info">
-              <h3 class="project-title">Residential Color Scheme</h3>
-              <p class="project-description">
-                Designed multiple exterior color combinations for modern and
-                traditional houses using Adobe Illustrator and AI-based
-                visualization tools
+            <div class="pc-info">
+              <h3>Residential Color Schemes</h3>
+              <p>
+                Multiple exterior color combinations for modern and traditional
+                houses using Adobe Illustrator and AI-based visualization tools.
               </p>
-              <div class="project-tech">
-                <span class="tech-badge">Illustrator</span>
-                <span class="tech-badge">AI Design</span>
-                <span class="tech-badge">Color Theory</span>
+              <div class="pc-tech">
+                <span>Illustrator</span><span>AI Design</span
+                ><span>Color Theory</span>
               </div>
             </div>
           </div>
 
-          <div
-            class="project-card-modern"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-          >
-            <div class="project-image-wrapper">
-              <div class="project-image">
-                <i class="fas fa-cube"></i>
+          <div class="proj-card" data-cat="cad">
+            <div class="pc-thumb">
+              <div class="pct-bg" style="--gc1: #0e7490; --gc2: #155e75">
+                <i class="bi bi-box-fill"></i>
               </div>
-              <div class="project-overlay">
-                <a
-                  href="#"
-                  class="project-link"
-                  aria-label="View 3D House Visualization Project"
+              <div class="pc-overlay">
+                <a href="#" class="pco-btn"
+                  ><i class="bi bi-eye-fill"></i> View Project</a
                 >
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
               </div>
+              <span class="pc-cat-badge">3D Visualization</span>
             </div>
-            <div class="project-info">
-              <h3 class="project-title">3D House Visualization</h3>
-              <p class="project-description">
-                Created detailed SketchUp 3D models with accurate dimensions and
-                realistic textures to assist clients in visual decision-making
+            <div class="pc-info">
+              <h3>3D House Visualization</h3>
+              <p>
+                Detailed SketchUp 3D models with accurate dimensions and
+                realistic textures for client visual decision-making.
               </p>
-              <div class="project-tech">
-                <span class="tech-badge">SketchUp</span>
-                <span class="tech-badge">V-ray</span>
-                <span class="tech-badge">3D Modeling</span>
+              <div class="pc-tech">
+                <span>SketchUp</span><span>V-Ray</span><span>3D Modeling</span>
               </div>
             </div>
           </div>
 
-          <div
-            class="project-card-modern"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            <div class="project-image-wrapper">
-              <div class="project-image">
-                <i class="fas fa-drafting-compass"></i>
+          <div class="proj-card" data-cat="civil">
+            <div class="pc-thumb">
+              <div class="pct-bg" style="--gc1: #059669; --gc2: #047857">
+                <i class="bi bi-rulers"></i>
               </div>
-              <div class="project-overlay">
-                <a
-                  href="#"
-                  class="project-link"
-                  aria-label="View 2D Floor & Elevation Project"
+              <div class="pc-overlay">
+                <a href="#" class="pco-btn"
+                  ><i class="bi bi-eye-fill"></i> View Project</a
                 >
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
               </div>
+              <span class="pc-cat-badge">Civil Engineering</span>
             </div>
-            <div class="project-info">
-              <h3 class="project-title">2D Floor & Elevation</h3>
-              <p class="project-description">
-                Developed AutoCAD 2D layouts and front elevations with precision
-                and scale accuracy for residential and commercial buildings
+            <div class="pc-info">
+              <h3>2D Floor & Elevation Plans</h3>
+              <p>
+                Precision AutoCAD 2D layouts and front elevations with scale
+                accuracy for residential and commercial buildings.
               </p>
-              <div class="project-tech">
-                <span class="tech-badge">AutoCAD</span>
-                <span class="tech-badge">Technical Drawing</span>
-                <span class="tech-badge">Floor Plans</span>
+              <div class="pc-tech">
+                <span>AutoCAD</span><span>Technical Drawing</span
+                ><span>Floor Plans</span>
               </div>
             </div>
           </div>
 
-          <div
-            class="project-card-modern"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-          >
-            <div class="project-image-wrapper">
-              <div class="project-image">
-                <i class="fas fa-paint-brush"></i>
+          <div class="proj-card" data-cat="graphic">
+            <div class="pc-thumb">
+              <div class="pct-bg" style="--gc1: #b45309; --gc2: #92400e">
+                <i class="bi bi-brush-fill"></i>
               </div>
-              <div class="project-overlay">
-                <a
-                  href="#"
-                  class="project-link"
-                  aria-label="View Branding & Marketing Project"
+              <div class="pc-overlay">
+                <a href="#" class="pco-btn"
+                  ><i class="bi bi-eye-fill"></i> View Project</a
                 >
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
               </div>
+              <span class="pc-cat-badge">Graphic Design</span>
             </div>
-            <div class="project-info">
-              <h3 class="project-title">Branding & Marketing</h3>
-              <p class="project-description">
-                Designed marketing posters, visiting cards, and social media
-                visuals using Adobe Express for local business promotions
+            <div class="pc-info">
+              <h3>Branding & Marketing</h3>
+              <p>
+                Marketing posters, visiting cards, and social media visuals
+                using Adobe Express for local business promotions.
               </p>
-              <div class="project-tech">
-                <span class="tech-badge">Adobe Express</span>
-                <span class="tech-badge">Graphic Design</span>
-                <span class="tech-badge">Branding</span>
+              <div class="pc-tech">
+                <span>Adobe Express</span><span>Branding</span
+                ><span>Print Design</span>
               </div>
             </div>
           </div>
 
-          <div
-            class="project-card-modern"
-            data-aos="zoom-in"
-            data-aos-delay="500"
-          >
-            <div class="project-image-wrapper">
-              <div class="project-image">
-                <i class="fas fa-building"></i>
+          <div class="proj-card" data-cat="civil">
+            <div class="pc-thumb">
+              <div class="pct-bg" style="--gc1: #0d9488; --gc2: #134e4a">
+                <i class="bi bi-building-fill"></i>
               </div>
-              <div class="project-overlay">
-                <a
-                  href="#"
-                  class="project-link"
-                  aria-label="View Commercial Building Project"
+              <div class="pc-overlay">
+                <a href="#" class="pco-btn"
+                  ><i class="bi bi-eye-fill"></i> View Project</a
                 >
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
               </div>
+              <span class="pc-cat-badge">Civil Engineering</span>
             </div>
-            <div class="project-info">
-              <h3 class="project-title">Commercial Building</h3>
-              <p class="project-description">
+            <div class="pc-info">
+              <h3>Commercial Building Design</h3>
+              <p>
                 Complete front elevation plan with interior and exterior design
-                solutions for commercial spaces
+                solutions for modern commercial spaces.
               </p>
-              <div class="project-tech">
-                <span class="tech-badge">AutoCAD</span>
-                <span class="tech-badge">SketchUp</span>
-                <span class="tech-badge">Design Planning</span>
+              <div class="pc-tech">
+                <span>AutoCAD</span><span>SketchUp</span
+                ><span>Design Planning</span>
               </div>
             </div>
           </div>
 
-          <div
-            class="project-card-modern"
-            data-aos="zoom-in"
-            data-aos-delay="600"
-          >
-            <div class="project-image-wrapper">
-              <div class="project-image">
-                <i class="fas fa-tree"></i>
+          <div class="proj-card" data-cat="cad">
+            <div class="pc-thumb">
+              <div class="pct-bg" style="--gc1: #16a34a; --gc2: #15803d">
+                <i class="bi bi-tree-fill"></i>
               </div>
-              <div class="project-overlay">
-                <a
-                  href="#"
-                  class="project-link"
-                  aria-label="View Landscape Design Project"
+              <div class="pc-overlay">
+                <a href="#" class="pco-btn"
+                  ><i class="bi bi-eye-fill"></i> View Project</a
                 >
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
               </div>
+              <span class="pc-cat-badge">Landscape</span>
             </div>
-            <div class="project-info">
-              <h3 class="project-title">Landscape Design</h3>
-              <p class="project-description">
-                3D exterior modeling and rendering for residential landscapes
-                and garden beautification projects
+            <div class="pc-info">
+              <h3>Landscape Design</h3>
+              <p>
+                3D exterior modeling and photo-realistic rendering for
+                residential landscapes and garden beautification projects.
               </p>
-              <div class="project-tech">
-                <span class="tech-badge">SketchUp</span>
-                <span class="tech-badge">Landscape Design</span>
-                <span class="tech-badge">Rendering</span>
+              <div class="pc-tech">
+                <span>SketchUp</span><span>V-Ray</span
+                ><span>Landscape Design</span>
               </div>
             </div>
           </div>
@@ -838,367 +833,379 @@
       </div>
     </section>
 
-    <!-- Certificates Section -->
-    <section id="certificates" class="certificates-section">
+    <!-- ═══════════════ CERTIFICATES ═══════════════ -->
+    <section id="certificates" class="section certs-section">
       <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">Certifications</h2>
-          <p class="section-subtitle">
-            Continuous learning and professional excellence
+        <div class="sec-header centered reveal">
+          <div class="sec-eyebrow">
+            <span class="ey-line"></span>Credentials
+          </div>
+          <h2 class="sec-title">Professional <em>Certifications</em></h2>
+          <p class="sec-desc">
+            Continuous learning and professional development in engineering,
+            design, and technology.
           </p>
         </div>
 
-        <div class="certificates-grid">
-          <div
-            class="certificate-card-modern"
-            data-aos="flip-left"
-            data-aos-delay="100"
-          >
-            <div class="cert-icon">
-              <i class="fas fa-drafting-compass"></i>
+        <div class="certs-grid">
+          <div class="cert-card reveal" style="--d: 0.05s">
+            <div class="cc-icon-wrap">
+              <div class="cc-icon"><i class="bi bi-pencil-square"></i></div>
             </div>
-            <h3 class="cert-title">AutoCAD 2D And 3D</h3>
-            <p class="cert-issuer">Professional Certificate</p>
-            <div class="cert-shine"></div>
+            <div class="cc-num">01</div>
+            <h3>AutoCAD 2D & 3D</h3>
+            <p>Professional Certificate</p>
+            <div class="cc-shine"></div>
           </div>
-
-          <div
-            class="certificate-card-modern"
-            data-aos="flip-left"
-            data-aos-delay="200"
-          >
-            <div class="cert-icon">
-              <i class="fas fa-palette"></i>
+          <div class="cert-card reveal" style="--d: 0.1s">
+            <div class="cc-icon-wrap">
+              <div class="cc-icon"><i class="bi bi-palette-fill"></i></div>
             </div>
-            <h3 class="cert-title">Graphic Design</h3>
-            <p class="cert-issuer">Professional Certificate</p>
-            <div class="cert-shine"></div>
+            <div class="cc-num">02</div>
+            <h3>Graphic Design</h3>
+            <p>Professional Certificate</p>
+            <div class="cc-shine"></div>
           </div>
-
-          <div
-            class="certificate-card-modern"
-            data-aos="flip-left"
-            data-aos-delay="300"
-          >
-            <div class="cert-icon">
-              <i class="fas fa-robot"></i>
+          <div class="cert-card reveal" style="--d: 0.15s">
+            <div class="cc-icon-wrap">
+              <div class="cc-icon"><i class="bi bi-robot"></i></div>
             </div>
-            <h3 class="cert-title">Design Fundamentals With AI</h3>
-            <p class="cert-issuer">Professional Certificate</p>
-            <div class="cert-shine"></div>
+            <div class="cc-num">03</div>
+            <h3>Design with AI</h3>
+            <p>Professional Certificate</p>
+            <div class="cc-shine"></div>
           </div>
-
-          <div
-            class="certificate-card-modern"
-            data-aos="flip-left"
-            data-aos-delay="400"
-          >
-            <div class="cert-icon">
-              <i class="fas fa-brain"></i>
+          <div class="cert-card reveal" style="--d: 0.2s">
+            <div class="cc-icon-wrap">
+              <div class="cc-icon"><i class="bi bi-cpu-fill"></i></div>
             </div>
-            <h3 class="cert-title">Generative AI Content</h3>
-            <p class="cert-issuer">Professional Certificate</p>
-            <div class="cert-shine"></div>
+            <div class="cc-num">04</div>
+            <h3>Generative AI Content</h3>
+            <p>Professional Certificate</p>
+            <div class="cc-shine"></div>
           </div>
-
-          <div
-            class="certificate-card-modern"
-            data-aos="flip-left"
-            data-aos-delay="500"
-          >
-            <div class="cert-icon">
-              <i class="fas fa-file-word"></i>
+          <div class="cert-card reveal" style="--d: 0.25s">
+            <div class="cc-icon-wrap">
+              <div class="cc-icon">
+                <i class="bi bi-file-earmark-word-fill"></i>
+              </div>
             </div>
-            <h3 class="cert-title">MS Word And Excel</h3>
-            <p class="cert-issuer">Professional Certificate</p>
-            <div class="cert-shine"></div>
+            <div class="cc-num">05</div>
+            <h3>MS Word & Excel</h3>
+            <p>Professional Certificate</p>
+            <div class="cc-shine"></div>
           </div>
-
-          <div
-            class="certificate-card-modern"
-            data-aos="flip-left"
-            data-aos-delay="600"
-          >
-            <div class="cert-icon">
-              <i class="fas fa-laptop-code"></i>
+          <div class="cert-card reveal" style="--d: 0.3s">
+            <div class="cc-icon-wrap">
+              <div class="cc-icon"><i class="bi bi-laptop-fill"></i></div>
             </div>
-            <h3 class="cert-title">Freelancing</h3>
-            <p class="cert-issuer">Professional Certificate</p>
-            <div class="cert-shine"></div>
+            <div class="cc-num">06</div>
+            <h3>Freelancing</h3>
+            <p>Professional Certificate</p>
+            <div class="cc-shine"></div>
           </div>
-
-          <div
-            class="certificate-card-modern"
-            data-aos="flip-left"
-            data-aos-delay="700"
-          >
-            <div class="cert-icon">
-              <i class="fab fa-wordpress"></i>
+          <div class="cert-card reveal" style="--d: 0.35s">
+            <div class="cc-icon-wrap">
+              <div class="cc-icon"><i class="bi bi-wordpress"></i></div>
             </div>
-            <h3 class="cert-title">WordPress</h3>
-            <p class="cert-issuer">Professional Certificate</p>
-            <div class="cert-shine"></div>
+            <div class="cc-num">07</div>
+            <h3>WordPress</h3>
+            <p>Professional Certificate</p>
+            <div class="cc-shine"></div>
           </div>
-
-          <div
-            class="certificate-card-modern"
-            data-aos="flip-left"
-            data-aos-delay="800"
-          >
-            <div class="cert-icon">
-              <i class="fas fa-book"></i>
+          <div class="cert-card reveal" style="--d: 0.4s">
+            <div class="cc-icon-wrap">
+              <div class="cc-icon"><i class="bi bi-book-half"></i></div>
             </div>
-            <h3 class="cert-title">NEBOSH</h3>
-            <p class="cert-issuer">Professional Certificate</p>
-            <div class="cert-shine"></div>
+            <div class="cc-num">08</div>
+            <h3>NEBOSH</h3>
+            <p>Professional Certificate</p>
+            <div class="cc-shine"></div>
           </div>
-
-          <div
-            class="certificate-card-modern"
-            data-aos="flip-left"
-            data-aos-delay="900"
-          >
-            <div class="cert-icon">
-              <i class="fas fa-hard-hat"></i>
+          <div class="cert-card reveal" style="--d: 0.45s">
+            <div class="cc-icon-wrap">
+              <div class="cc-icon"><i class="bi bi-shield-fill-check"></i></div>
             </div>
-            <h3 class="cert-title">HSE Engineering</h3>
-            <p class="cert-issuer">Professional Certificate</p>
-            <div class="cert-shine"></div>
+            <div class="cc-num">09</div>
+            <h3>HSE Engineering</h3>
+            <p>Professional Certificate</p>
+            <div class="cc-shine"></div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="education-section">
+    <!-- ═══════════════ EDUCATION ═══════════════ -->
+    <section id="education" class="section edu-section alt-bg">
       <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">Education</h2>
-          <p class="section-subtitle">
-            Building a strong foundation for professional excellence
-          </p>
+        <div class="sec-header centered reveal">
+          <div class="sec-eyebrow">
+            <span class="ey-line"></span>Academic Background
+          </div>
+          <h2 class="sec-title">Education & <em>Languages</em></h2>
         </div>
 
-        <div class="education-timeline">
-          <div
-            class="education-card-modern"
-            data-aos="fade-right"
-            data-aos-delay="100"
-          >
-            <div class="edu-year">2013 - 2016</div>
-            <div class="edu-icon">
-              <i class="fas fa-graduation-cap"></i>
+        <div class="edu-grid">
+          <div class="edu-card reveal">
+            <div class="edu-year-badge">2013 — 2016</div>
+            <div class="edu-icon-wrap">
+              <i class="bi bi-mortarboard-fill"></i>
             </div>
-            <div class="edu-content">
-              <h3 class="edu-degree">Diploma of Associate Engineering</h3>
-              <h4 class="edu-field">Civil Engineering</h4>
-              <p class="edu-institution">Government Technical College</p>
-              <p class="edu-location">
-                <i class="fas fa-map-marker-alt"></i>
-                Timergara Dir Lower KPK, Pakistan
+            <div class="edu-body">
+              <span class="edu-level">Diploma of Associate Engineering</span>
+              <h3>Civil Engineering</h3>
+              <p class="edu-inst">
+                <i class="bi bi-building"></i> Government Technical College
+              </p>
+              <p class="edu-loc">
+                <i class="bi bi-geo-alt-fill"></i> Timergara Dir Lower KPK,
+                Pakistan
               </p>
               <div class="edu-grade">
-                <span class="grade-label">Grade:</span>
-                <span class="grade-value">B</span>
+                <span class="eg-label">Grade</span>
+                <span class="eg-val">B</span>
               </div>
             </div>
           </div>
 
-          <div
-            class="education-card-modern"
-            data-aos="fade-left"
-            data-aos-delay="200"
-          >
-            <div class="edu-year">2011 - 2013</div>
-            <div class="edu-icon">
-              <i class="fas fa-school"></i>
-            </div>
-            <div class="edu-content">
-              <h3 class="edu-degree">Matriculation</h3>
-              <h4 class="edu-field">Secondary Education</h4>
-              <p class="edu-institution">Panjkora Public School</p>
-              <p class="edu-location">
-                <i class="fas fa-map-marker-alt"></i>
-                Balambat Timergara Dir Lower KPK, Pakistan
+          <div class="edu-card reveal" style="--d: 0.15s">
+            <div class="edu-year-badge">2011 — 2013</div>
+            <div class="edu-icon-wrap"><i class="bi bi-journal-text"></i></div>
+            <div class="edu-body">
+              <span class="edu-level">Matriculation</span>
+              <h3>Secondary Education</h3>
+              <p class="edu-inst">
+                <i class="bi bi-building"></i> Panjkora Public School
+              </p>
+              <p class="edu-loc">
+                <i class="bi bi-geo-alt-fill"></i> Balambat Timergara Dir Lower
+                KPK, Pakistan
               </p>
               <div class="edu-grade">
-                <span class="grade-label">Grade:</span>
-                <span class="grade-value">C</span>
+                <span class="eg-label">Grade</span>
+                <span class="eg-val">C</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="languages-section" data-aos="fade-up" data-aos-delay="300">
-          <h3 class="languages-title">Language Proficiency</h3>
-          <div class="languages-grid">
-            <div class="language-card">
-              <i class="fas fa-globe"></i>
+        <div class="lang-section reveal">
+          <h3 class="lang-title">Language Proficiency</h3>
+          <div class="lang-grid">
+            <div class="lang-card">
+              <div class="lc-icon"><i class="bi bi-globe2"></i></div>
               <h4>English</h4>
-              <div class="language-level">Fluent</div>
+              <span class="lc-level fluent">Fluent</span>
+              <div class="lc-dots">
+                <span class="d on"></span><span class="d on"></span
+                ><span class="d on"></span><span class="d on"></span
+                ><span class="d half"></span>
+              </div>
             </div>
-            <div class="language-card">
-              <i class="fas fa-language"></i>
+            <div class="lang-card">
+              <div class="lc-icon"><i class="bi bi-translate"></i></div>
               <h4>Arabic</h4>
-              <div class="language-level">Basic</div>
+              <span class="lc-level basic">Basic</span>
+              <div class="lc-dots">
+                <span class="d on"></span><span class="d on"></span
+                ><span class="d"></span><span class="d"></span
+                ><span class="d"></span>
+              </div>
             </div>
-            <div class="language-card">
-              <i class="fas fa-book"></i>
+            <div class="lang-card">
+              <div class="lc-icon"><i class="bi bi-chat-quote-fill"></i></div>
               <h4>Urdu</h4>
-              <div class="language-level">Native</div>
+              <span class="lc-level native">Native</span>
+              <div class="lc-dots">
+                <span class="d on"></span><span class="d on"></span
+                ><span class="d on"></span><span class="d on"></span
+                ><span class="d on"></span>
+              </div>
             </div>
-            <div class="language-card">
-              <i class="fas fa-comment"></i>
+            <div class="lang-card">
+              <div class="lc-icon"><i class="bi bi-chat-fill"></i></div>
               <h4>Pashto</h4>
-              <div class="language-level">Native</div>
+              <span class="lc-level native">Native</span>
+              <div class="lc-dots">
+                <span class="d on"></span><span class="d on"></span
+                ><span class="d on"></span><span class="d on"></span
+                ><span class="d on"></span>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section id="contact" class="section contact-section">
       <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <h2 class="section-title">Get In Touch</h2>
-          <p class="section-subtitle">
-            Let's collaborate and bring your vision to life
+        <div class="sec-header centered reveal">
+          <div class="sec-eyebrow">
+            <span class="ey-line"></span>Get In Touch
+          </div>
+          <h2 class="sec-title">Let's <em>Build Something</em></h2>
+          <p class="sec-desc">
+            Ready to collaborate? I'm open to freelance projects, design
+            commissions, and engineering consultations.
           </p>
         </div>
 
-        <div class="row g-4 g-lg-5">
-          <div class="col-lg-5" data-aos="fade-right" data-aos-delay="100">
-            <div class="contact-info-modern">
-              <h3 class="contact-info-title">Contact Information</h3>
-              <p class="contact-info-text">
-                Feel free to reach out for collaborations, project discussions,
-                or just to say hello!
-              </p>
+        <div class="contact-grid">
+          <div class="contact-info-side reveal-l">
+            <h3>Start a Conversation</h3>
+            <p>
+              Whether you need AutoCAD drawings, 3D visualization, graphic
+              design, or safety engineering consultation — I'm here to help
+              bring your vision to life.
+            </p>
 
-              <div class="contact-details">
-                <div class="contact-item-modern">
-                  <div class="contact-icon">
-                    <i class="fas fa-phone"></i>
-                  </div>
-                  <div class="contact-text">
-                    <h4>Phone</h4>
-                    <p><a href="tel:+923159784820">0315978482</a></p>
-                  </div>
-                </div>
-
-                <div class="contact-item-modern">
-                  <div class="contact-icon">
-                    <i class="fas fa-envelope"></i>
-                  </div>
-                  <div class="contact-text">
-                    <h4>Email</h4>
-                    <p>
-                      <a href="mailto:farhadsaeed0314@gmail.com"
-                        >farhadsaeed0314@gmail.com</a
-                      >
-                    </p>
-                  </div>
-                </div>
-
-                <div class="contact-item-modern">
-                  <div class="contact-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <div class="contact-text">
-                    <h4>Location</h4>
-                    <p>Timergara, Dir Lower, KPK, Pakistan</p>
-                  </div>
+            <div class="ci-items">
+              <div class="ci-item">
+                <div class="ci-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                <div>
+                  <span class="ci-label">Location</span
+                  ><strong>Timergara, Dir Lower, KPK, Pakistan</strong>
                 </div>
               </div>
-
-              <div class="social-links-modern">
-                <a
-                  href="#"
-                  class="social-link-modern"
-                  aria-label="LinkedIn Profile"
-                >
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a
-                  href="#"
-                  class="social-link-modern"
-                  aria-label="GitHub Profile"
-                >
-                  <i class="fab fa-github"></i>
-                </a>
-                <a
-                  href="#"
-                  class="social-link-modern"
-                  aria-label="Facebook Profile"
-                >
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a
-                  href="#"
-                  class="social-link-modern"
-                  aria-label="Instagram Profile"
-                >
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a
-                  href="#"
-                  class="social-link-modern"
-                  aria-label="Twitter Profile"
-                >
-                  <i class="fab fa-twitter"></i>
-                </a>
+              <div class="ci-item">
+                <div class="ci-icon"><i class="bi bi-envelope-fill"></i></div>
+                <div>
+                  <span class="ci-label">Email</span
+                  ><strong>farhadsaeed0314@gmail.com</strong>
+                </div>
               </div>
+              <div class="ci-item">
+                <div class="ci-icon"><i class="bi bi-telephone-fill"></i></div>
+                <div>
+                  <span class="ci-label">Phone</span
+                  ><strong>0315 978 4820</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="soc-row">
+              <a href="#" class="soc-btn" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="#" class="soc-btn" aria-label="GitHub"
+                ><i class="bi bi-github"></i
+              ></a>
+              <a href="#" class="soc-btn" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="soc-btn" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a
+                href="https://wa.me/923159784820"
+                class="soc-btn"
+                aria-label="WhatsApp"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+            </div>
+
+            <div class="ci-blueprint-deco">
+              <svg
+                viewBox="0 0 200 120"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                opacity="0.08"
+              >
+                <rect
+                  x="20"
+                  y="20"
+                  width="60"
+                  height="80"
+                  stroke="currentColor"
+                  stroke-width="1"
+                />
+                <rect
+                  x="90"
+                  y="40"
+                  width="90"
+                  height="60"
+                  stroke="currentColor"
+                  stroke-width="1"
+                />
+                <line
+                  x1="20"
+                  y1="60"
+                  x2="80"
+                  y2="60"
+                  stroke="currentColor"
+                  stroke-width="0.5"
+                  stroke-dasharray="3,3"
+                />
+                <line
+                  x1="90"
+                  y1="60"
+                  x2="180"
+                  y2="60"
+                  stroke="currentColor"
+                  stroke-width="0.5"
+                  stroke-dasharray="3,3"
+                />
+                <circle cx="20" cy="20" r="3" fill="currentColor" />
+                <circle cx="80" cy="20" r="3" fill="currentColor" />
+                <circle cx="180" cy="40" r="3" fill="currentColor" />
+              </svg>
             </div>
           </div>
 
-          <div class="col-lg-7" data-aos="fade-left" data-aos-delay="200">
-            <form class="contact-form-modern" id="contactForm">
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="name">Your Name</label>
+          <div class="contact-form-side reveal-r">
+            <form id="contactForm">
+              <div class="cf-row">
+                <div class="cf-group">
+                  <label for="cfName">Full Name</label>
                   <input
                     type="text"
-                    id="name"
-                    class="form-input"
-                    placeholder="John Doe"
+                    id="cfName"
+                    placeholder="Your full name"
                     required
                   />
                 </div>
-                <div class="form-group">
-                  <label for="email">Your Email</label>
+                <div class="cf-group">
+                  <label for="cfEmail">Email Address</label>
                   <input
                     type="email"
-                    id="email"
-                    class="form-input"
-                    placeholder="john@example.com"
+                    id="cfEmail"
+                    placeholder="your@email.com"
                     required
                   />
                 </div>
               </div>
-              <div class="form-group">
-                <label for="subject">Subject</label>
+              <div class="cf-group">
+                <label for="cfSubject">Subject</label>
                 <input
                   type="text"
-                  id="subject"
-                  class="form-input"
-                  placeholder="Project Inquiry"
+                  id="cfSubject"
+                  placeholder="Project Inquiry / Consultation"
                   required
                 />
               </div>
-              <div class="form-group">
-                <label for="message">Your Message</label>
+              <div class="cf-group">
+                <label for="cfService">Service Needed</label>
+                <select id="cfService">
+                  <option value="">Select a service...</option>
+                  <option>AutoCAD 2D/3D Design</option>
+                  <option>SketchUp 3D Modeling</option>
+                  <option>Graphic Design / Branding</option>
+                  <option>Safety Engineering Consultation</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="cf-group">
+                <label for="cfMessage">Your Message</label>
                 <textarea
-                  id="message"
-                  class="form-textarea"
+                  id="cfMessage"
                   rows="5"
-                  placeholder="Tell me about your project..."
-                  required
+                  placeholder="Describe your project in detail..."
                 ></textarea>
               </div>
-              <button type="submit" class="btn-submit">
+              <button type="submit" class="cf-submit">
                 <span>Send Message</span>
-                <i class="fas fa-paper-plane"></i>
+                <i class="bi bi-send-fill"></i>
               </button>
             </form>
           </div>
@@ -1206,908 +1213,103 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer-modern">
+    <!-- ═══════════════ FOOTER ═══════════════ -->
+    <footer class="site-footer">
       <div class="container">
-        <div class="footer-content">
-          <div class="footer-brand-section">
-            <h2 class="footer-brand">Farhad Saeed</h2>
-            <p class="footer-tagline">
-              Transforming visions into reality through the perfect synergy of
-              Civil Engineering expertise, AutoCAD and SketchUp precision, and
-              AI-driven design innovation — creating sustainable, efficient, and
-              visually inspiring solutions.
-            </p>
-          </div>
-
-          <div class="footer-links-section">
-            <div class="footer-col">
-              <h4>Quick Links</h4>
-              <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Services</h4>
-              <ul>
-                <li><a href="#">AutoCAD Design</a></li>
-                <li><a href="#">3D Visualization</a></li>
-                <li><a href="#">Graphic Design</a></li>
-                <li><a href="#">Safety Engineering</a></li>
-              </ul>
-            </div>
-            <div class="footer-col">
-              <h4>Connect</h4>
-              <div class="footer-social">
-                <a href="#" aria-label="LinkedIn"
-                  ><i class="fab fa-linkedin-in"></i
-                ></a>
-                <a href="#" aria-label="GitHub"
-                  ><i class="fab fa-github"></i
-                ></a>
-                <a href="#" aria-label="Facebook"
-                  ><i class="fab fa-facebook-f"></i
-                ></a>
-                <a href="#" aria-label="Instagram"
-                  ><i class="fab fa-instagram"></i
-                ></a>
-                <a href="#" aria-label="Twitter"
-                  ><i class="fab fa-twitter"></i
-                ></a>
+        <div class="footer-grid">
+          <div class="fg-brand">
+            <div class="fg-logo">
+              <div class="logo-emblem">
+                <svg width="20" height="20" viewBox="0 0 22 22" fill="none">
+                  <rect
+                    x="1"
+                    y="1"
+                    width="9"
+                    height="9"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <rect
+                    x="12"
+                    y="1"
+                    width="9"
+                    height="9"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <rect
+                    x="1"
+                    y="12"
+                    width="9"
+                    height="9"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                  />
+                  <rect
+                    x="12"
+                    y="12"
+                    width="9"
+                    height="9"
+                    fill="currentColor"
+                  />
+                </svg>
               </div>
+              <span>Farhad Saeed</span>
             </div>
+            <p>
+              Transforming visions into reality through Civil Engineering
+              precision, AutoCAD & SketchUp expertise, and creative design
+              innovation.
+            </p>
+            <div class="fg-social">
+              <a href="#" aria-label="LinkedIn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="#" aria-label="GitHub"><i class="bi bi-github"></i></a>
+              <a href="#" aria-label="Facebook"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" aria-label="Instagram"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="fg-col">
+            <h5>Quick Links</h5>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="fg-col">
+            <h5>Services</h5>
+            <a href="#">AutoCAD Design</a>
+            <a href="#">3D Visualization</a>
+            <a href="#">Graphic Design</a>
+            <a href="#">Safety Engineering</a>
+            <a href="#">Brand Identity</a>
+          </div>
+          <div class="fg-col">
+            <h5>Contact</h5>
+            <a href="mailto:farhadsaeed0314@gmail.com"
+              >farhadsaeed0314@gmail.com</a
+            >
+            <a href="tel:+923159784820">0315 978 4820</a>
+            <a href="#">Timergara, Pakistan</a>
           </div>
         </div>
-
         <div class="footer-bottom">
-          <p>&copy; 2025 Farhad Saeed — All rights reserved.</p>
+          <p>© 2025 <span>Farhad Saeed</span>. All rights reserved.</p>
+          <p>Civil Engineer & Design Specialist</p>
         </div>
       </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-      <i class="fas fa-arrow-up"></i>
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Back to top">
+      <i class="bi bi-arrow-up"></i>
     </button>
 
-    <!-- Scripts -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="script.js"></script>
-    <script>
-      // ========================================
-      // ULTRA-PREMIUM PORTFOLIO - JAVASCRIPT
-      // Created for Farhad Saeed
-      // Mobile-Optimized | Performance-Enhanced
-      // ========================================
-
-      (function () {
-        "use strict";
-
-        // ========================================
-        // LOADING SCREEN
-        // ========================================
-        window.addEventListener("load", function () {
-          setTimeout(function () {
-            const loadingScreen = document.getElementById("loadingScreen");
-            if (loadingScreen) {
-              loadingScreen.classList.add("hidden");
-            }
-          }, 1000);
-        });
-
-        // ========================================
-        // INITIALIZE AOS (ANIMATION ON SCROLL)
-        // ========================================
-        if (typeof AOS !== "undefined") {
-          AOS.init({
-            duration: 800,
-            easing: "ease-out-cubic",
-            once: true,
-            offset: 50,
-            delay: 50,
-            disable: function () {
-              return window.innerWidth < 768; // Disable on mobile for performance
-            },
-          });
-        }
-
-        // ========================================
-        // CUSTOM CURSOR (DESKTOP ONLY)
-        // ========================================
-        if (window.innerWidth > 768) {
-          const cursorDot = document.getElementById("cursorDot");
-          const cursorOutline = document.getElementById("cursorOutline");
-
-          if (cursorDot && cursorOutline) {
-            let mouseX = 0;
-            let mouseY = 0;
-            let outlineX = 0;
-            let outlineY = 0;
-
-            document.addEventListener("mousemove", function (e) {
-              mouseX = e.clientX;
-              mouseY = e.clientY;
-
-              cursorDot.style.left = mouseX + "px";
-              cursorDot.style.top = mouseY + "px";
-            });
-
-            // Smooth follow for outline
-            function animateCursor() {
-              const distX = mouseX - outlineX;
-              const distY = mouseY - outlineY;
-
-              outlineX += distX * 0.15;
-              outlineY += distY * 0.15;
-
-              cursorOutline.style.left = outlineX + "px";
-              cursorOutline.style.top = outlineY + "px";
-
-              requestAnimationFrame(animateCursor);
-            }
-
-            animateCursor();
-
-            // Cursor effects on hover
-            const hoverElements = document.querySelectorAll(
-              "a, button, .project-card-modern, .certificate-card-modern, .skill-tag, .tech-badge"
-            );
-            hoverElements.forEach((element) => {
-              element.addEventListener("mouseenter", function () {
-                cursorDot.style.transform = "translate(-50%, -50%) scale(1.5)";
-                cursorOutline.style.transform =
-                  "translate(-50%, -50%) scale(1.5)";
-              });
-
-              element.addEventListener("mouseleave", function () {
-                cursorDot.style.transform = "translate(-50%, -50%) scale(1)";
-                cursorOutline.style.transform =
-                  "translate(-50%, -50%) scale(1)";
-              });
-            });
-          }
-        }
-
-        // ========================================
-        // NAVBAR SCROLL EFFECT
-        // ========================================
-        const navbar = document.getElementById("mainNav");
-        let lastScroll = 0;
-        let ticking = false;
-
-        function updateNavbar() {
-          const currentScroll = window.pageYOffset;
-
-          // Add scrolled class
-          if (currentScroll > 50) {
-            navbar.classList.add("scrolled");
-          } else {
-            navbar.classList.remove("scrolled");
-          }
-
-          // Hide/show navbar on scroll (desktop only)
-          if (window.innerWidth > 768) {
-            if (currentScroll > lastScroll && currentScroll > 500) {
-              navbar.style.transform = "translateY(-100%)";
-            } else {
-              navbar.style.transform = "translateY(0)";
-            }
-          }
-
-          lastScroll = currentScroll;
-          ticking = false;
-        }
-
-        window.addEventListener("scroll", function () {
-          if (!ticking) {
-            window.requestAnimationFrame(updateNavbar);
-            ticking = true;
-          }
-        });
-
-        // ========================================
-        // SMOOTH SCROLL & ACTIVE NAV
-        // ========================================
-        const navLinks = document.querySelectorAll(".nav-link");
-
-        navLinks.forEach((link) => {
-          link.addEventListener("click", function (e) {
-            const href = this.getAttribute("href");
-
-            if (href.startsWith("#")) {
-              e.preventDefault();
-              const target = document.querySelector(href);
-
-              if (target) {
-                const navbarHeight = navbar.offsetHeight;
-                const targetPosition = target.offsetTop - navbarHeight - 20;
-
-                window.scrollTo({
-                  top: targetPosition,
-                  behavior: "smooth",
-                });
-
-                // Close mobile menu
-                const navbarCollapse =
-                  document.querySelector(".navbar-collapse");
-                if (
-                  navbarCollapse &&
-                  navbarCollapse.classList.contains("show")
-                ) {
-                  const bsCollapse =
-                    bootstrap.Collapse.getInstance(navbarCollapse);
-                  if (bsCollapse) {
-                    bsCollapse.hide();
-                  }
-                }
-              }
-            }
-          });
-        });
-
-        // Active nav highlighting (throttled for performance)
-        let highlightTicking = false;
-
-        function highlightActiveSection() {
-          const scrollPos = window.pageYOffset + 150;
-          const sections = document.querySelectorAll("section[id]");
-
-          sections.forEach((section) => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.offsetHeight;
-            const sectionId = section.getAttribute("id");
-
-            if (
-              scrollPos >= sectionTop &&
-              scrollPos < sectionTop + sectionHeight
-            ) {
-              navLinks.forEach((link) => {
-                link.classList.remove("active");
-                if (link.getAttribute("href") === `#${sectionId}`) {
-                  link.classList.add("active");
-                }
-              });
-            }
-          });
-
-          highlightTicking = false;
-        }
-
-        window.addEventListener("scroll", function () {
-          if (!highlightTicking) {
-            window.requestAnimationFrame(highlightActiveSection);
-            highlightTicking = true;
-          }
-        });
-
-        // ========================================
-        // COUNTER ANIMATION
-        // ========================================
-        const counters = document.querySelectorAll(".card-number[data-target]");
-        const counterSpeed = 200;
-
-        const animateCounter = (counter) => {
-          const target = +counter.getAttribute("data-target");
-          const increment = target / counterSpeed;
-          let hasAnimated = false;
-
-          const updateCounter = () => {
-            if (hasAnimated) return;
-
-            const current = +counter.innerText;
-
-            if (current < target) {
-              counter.innerText = Math.ceil(current + increment);
-              setTimeout(updateCounter, 10);
-            } else {
-              counter.innerText = target + "+";
-              hasAnimated = true;
-            }
-          };
-
-          updateCounter();
-        };
-
-        const observerOptions = {
-          threshold: 0.5,
-          rootMargin: "0px",
-        };
-
-        const counterObserver = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              animateCounter(entry.target);
-              counterObserver.unobserve(entry.target);
-            }
-          });
-        }, observerOptions);
-
-        counters.forEach((counter) => {
-          counterObserver.observe(counter);
-        });
-
-        // ========================================
-        // SKILL BARS ANIMATION
-        // ========================================
-        const skillBars = document.querySelectorAll(
-          ".skill-progress[data-progress]"
-        );
-
-        const skillObserver = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              const progress = entry.target.getAttribute("data-progress");
-              entry.target.style.width = progress + "%";
-              skillObserver.unobserve(entry.target);
-            }
-          });
-        }, observerOptions);
-
-        skillBars.forEach((bar) => {
-          skillObserver.observe(bar);
-        });
-
-        // ========================================
-        // FORM SUBMISSION
-        // ========================================
-        const contactForm = document.getElementById("contactForm");
-
-        if (contactForm) {
-          contactForm.addEventListener("submit", function (e) {
-            e.preventDefault();
-
-            // Get form data
-            const formData = {
-              name: document.getElementById("name").value,
-              email: document.getElementById("email").value,
-              subject: document.getElementById("subject").value,
-              message: document.getElementById("message").value,
-            };
-
-            // Basic validation
-            if (
-              !formData.name ||
-              !formData.email ||
-              !formData.subject ||
-              !formData.message
-            ) {
-              showNotification("error", "Please fill in all fields");
-              return;
-            }
-
-            // Email validation
-            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-            if (!emailRegex.test(formData.email)) {
-              showNotification("error", "Please enter a valid email address");
-              return;
-            }
-
-            // Show success message
-            showNotification(
-              "success",
-              "Thank you for your message! I will get back to you soon."
-            );
-
-            // Reset form
-            contactForm.reset();
-
-            // You can add actual form submission logic here
-            // For example, sending to a backend API or email service
-          });
-        }
-
-        // ========================================
-        // NOTIFICATION SYSTEM
-        // ========================================
-        function showNotification(type, message) {
-          // Remove existing notifications
-          const existingNotifications =
-            document.querySelectorAll(".notification");
-          existingNotifications.forEach((notif) => notif.remove());
-
-          // Create notification element
-          const notification = document.createElement("div");
-          notification.className = `notification notification-${type}`;
-
-          const icon =
-            type === "success" ? "check-circle" : "exclamation-circle";
-          const bgColor =
-            type === "success"
-              ? "linear-gradient(135deg, #10B981 0%, #059669 100%)"
-              : "linear-gradient(135deg, #EF4444 0%, #DC2626 100%)";
-
-          notification.innerHTML = `
-            <div class="notification-content">
-                <i class="fas fa-${icon}"></i>
-                <span>${message}</span>
-            </div>
-        `;
-
-          // Add styles
-          notification.style.cssText = `
-            position: fixed;
-            top: 100px;
-            right: 20px;
-            background: ${bgColor};
-            color: white;
-            padding: clamp(14px, 2vw, 20px) clamp(20px, 3vw, 30px);
-            border-radius: 12px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            z-index: 10000;
-            animation: slideInRight 0.4s ease, slideOutRight 0.4s ease 2.6s;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            font-weight: 600;
-            max-width: 90vw;
-            font-size: clamp(14px, 1.5vw, 16px);
-        `;
-
-          document.body.appendChild(notification);
-
-          // Remove after 3 seconds
-          setTimeout(() => {
-            notification.remove();
-          }, 3000);
-        }
-
-        // Add notification animations if not already in CSS
-        if (!document.querySelector("style[data-notification-styles]")) {
-          const style = document.createElement("style");
-          style.setAttribute("data-notification-styles", "true");
-          style.innerHTML = `
-            @keyframes slideInRight {
-                from {
-                    transform: translateX(400px);
-                    opacity: 0;
-                }
-                to {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-            }
-
-            @keyframes slideOutRight {
-                from {
-                    transform: translateX(0);
-                    opacity: 1;
-                }
-                to {
-                    transform: translateX(400px);
-                    opacity: 0;
-                }
-            }
-
-            .notification-content {
-                display: flex;
-                align-items: center;
-                gap: 12px;
-            }
-
-            .notification-content i {
-                font-size: clamp(20px, 2.5vw, 24px);
-                flex-shrink: 0;
-            }
-        `;
-          document.head.appendChild(style);
-        }
-
-        // ========================================
-        // BACK TO TOP BUTTON
-        // ========================================
-        const backToTop = document.getElementById("backToTop");
-
-        if (backToTop) {
-          let backToTopTicking = false;
-
-          function updateBackToTop() {
-            if (window.pageYOffset > 300) {
-              backToTop.classList.add("show");
-            } else {
-              backToTop.classList.remove("show");
-            }
-            backToTopTicking = false;
-          }
-
-          window.addEventListener("scroll", function () {
-            if (!backToTopTicking) {
-              window.requestAnimationFrame(updateBackToTop);
-              backToTopTicking = true;
-            }
-          });
-
-          backToTop.addEventListener("click", function (e) {
-            e.preventDefault();
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth",
-            });
-          });
-        }
-
-        // ========================================
-        // PARALLAX EFFECT (DESKTOP ONLY)
-        // ========================================
-        if (window.innerWidth > 768) {
-          let parallaxTicking = false;
-
-          function updateParallax() {
-            const scrolled = window.pageYOffset;
-
-            // Parallax for hero section
-            const heroOrbs = document.querySelectorAll(".hero-gradient-orb");
-            heroOrbs.forEach((orb, index) => {
-              const speed = 0.3 + index * 0.1;
-              orb.style.transform = `translateY(${scrolled * speed}px)`;
-            });
-
-            parallaxTicking = false;
-          }
-
-          window.addEventListener("scroll", function () {
-            if (!parallaxTicking) {
-              window.requestAnimationFrame(updateParallax);
-              parallaxTicking = true;
-            }
-          });
-        }
-
-        // ========================================
-        // PROJECT CARD 3D TILT EFFECT (DESKTOP ONLY)
-        // ========================================
-        if (
-          window.innerWidth > 768 &&
-          window.matchMedia("(hover: hover)").matches
-        ) {
-          const projectCards = document.querySelectorAll(
-            ".project-card-modern"
-          );
-
-          projectCards.forEach((card) => {
-            card.addEventListener("mousemove", function (e) {
-              const rect = card.getBoundingClientRect();
-              const x = e.clientX - rect.left;
-              const y = e.clientY - rect.top;
-
-              const centerX = rect.width / 2;
-              const centerY = rect.height / 2;
-
-              const rotateX = (y - centerY) / 15;
-              const rotateY = (centerX - x) / 15;
-
-              card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-12px)`;
-            });
-
-            card.addEventListener("mouseleave", function () {
-              card.style.transform =
-                "perspective(1000px) rotateX(0) rotateY(0) translateY(0)";
-            });
-          });
-        }
-
-        // ========================================
-        // MOBILE MENU ENHANCEMENTS
-        // ========================================
-        const navbarToggler = document.querySelector(".navbar-toggler");
-        const navbarCollapse = document.querySelector(".navbar-collapse");
-
-        if (navbarToggler && navbarCollapse) {
-          navbarToggler.addEventListener("click", function () {
-            navbarToggler.classList.toggle("active");
-          });
-
-          // Close menu when clicking outside
-          document.addEventListener("click", function (e) {
-            if (
-              !navbar.contains(e.target) &&
-              navbarCollapse.classList.contains("show")
-            ) {
-              const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-              if (bsCollapse) {
-                bsCollapse.hide();
-              }
-              navbarToggler.classList.remove("active");
-            }
-          });
-
-          // Close menu on escape key
-          document.addEventListener("keydown", function (e) {
-            if (
-              e.key === "Escape" &&
-              navbarCollapse.classList.contains("show")
-            ) {
-              const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse);
-              if (bsCollapse) {
-                bsCollapse.hide();
-              }
-              navbarToggler.classList.remove("active");
-            }
-          });
-        }
-
-        // ========================================
-        // SCROLL REVEAL ANIMATIONS
-        // ========================================
-        const revealElements = document.querySelectorAll(
-          ".info-card-modern, .skill-category-card, .project-card-modern, .certificate-card-modern"
-        );
-
-        const revealObserver = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                entry.target.style.opacity = "1";
-                entry.target.style.transform = "translateY(0)";
-              }
-            });
-          },
-          {
-            threshold: 0.1,
-            rootMargin: "0px 0px -50px 0px",
-          }
-        );
-
-        revealElements.forEach((element) => {
-          element.style.opacity = "0";
-          element.style.transform = "translateY(30px)";
-          element.style.transition = "all 0.6s ease";
-          revealObserver.observe(element);
-        });
-
-        // ========================================
-        // FORM VALIDATION
-        // ========================================
-        const formInputs = document.querySelectorAll(
-          ".form-input, .form-textarea"
-        );
-
-        formInputs.forEach((input) => {
-          input.addEventListener("blur", function () {
-            if (this.value.trim() === "" && this.hasAttribute("required")) {
-              this.style.borderColor = "#EF4444";
-            } else {
-              this.style.borderColor = "";
-            }
-          });
-
-          input.addEventListener("input", function () {
-            if (this.style.borderColor === "rgb(239, 68, 68)") {
-              this.style.borderColor = "";
-            }
-          });
-        });
-
-        // ========================================
-        // PERFORMANCE MONITORING
-        // ========================================
-
-        // Debounce function for scroll events
-        function debounce(func, wait = 10) {
-          let timeout;
-          return function executedFunction(...args) {
-            const later = () => {
-              clearTimeout(timeout);
-              func(...args);
-            };
-            clearTimeout(timeout);
-            timeout = setTimeout(later, wait);
-          };
-        }
-
-        // ========================================
-        // LAZY LOADING IMAGES (if needed)
-        // ========================================
-        if ("IntersectionObserver" in window) {
-          const imageObserver = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting) {
-                const img = entry.target;
-                if (img.dataset.src) {
-                  img.src = img.dataset.src;
-                  img.classList.add("loaded");
-                  imageObserver.unobserve(img);
-                }
-              }
-            });
-          });
-
-          const lazyImages = document.querySelectorAll("img[data-src]");
-          lazyImages.forEach((img) => imageObserver.observe(img));
-        }
-
-        // ========================================
-        // RESPONSIVE RESIZE HANDLER
-        // ========================================
-        let resizeTimer;
-        window.addEventListener("resize", function () {
-          clearTimeout(resizeTimer);
-          resizeTimer = setTimeout(function () {
-            // Refresh AOS on resize
-            if (typeof AOS !== "undefined") {
-              AOS.refresh();
-            }
-
-            // Update any layout calculations here if needed
-          }, 250);
-        });
-
-        // ========================================
-        // TOUCH DEVICE OPTIMIZATIONS
-        // ========================================
-        if ("ontouchstart" in window || navigator.maxTouchPoints > 0) {
-          document.body.classList.add("touch-device");
-
-          // Disable hover effects on touch devices
-          const hoverElements = document.querySelectorAll(
-            ".project-card-modern, .certificate-card-modern"
-          );
-          hoverElements.forEach((element) => {
-            element.addEventListener("touchstart", function () {
-              this.classList.add("touch-active");
-            });
-
-            element.addEventListener("touchend", function () {
-              setTimeout(() => {
-                this.classList.remove("touch-active");
-              }, 300);
-            });
-          });
-        }
-
-        // ========================================
-        // ORIENTATION CHANGE HANDLER
-        // ========================================
-        window.addEventListener("orientationchange", function () {
-          // Refresh layout after orientation change
-          setTimeout(function () {
-            if (typeof AOS !== "undefined") {
-              AOS.refresh();
-            }
-          }, 300);
-        });
-
-        // ========================================
-        // PREVENT ANIMATION ON PAGE LOAD
-        // ========================================
-        window.addEventListener("load", function () {
-          document.body.classList.add("loaded");
-        });
-
-        // ========================================
-        // CONSOLE MESSAGE
-        // ========================================
-        const styles = [
-          "color: #0EA5E9",
-          "font-size: 20px",
-          "font-weight: bold",
-          "text-shadow: 0 0 10px rgba(14, 165, 233, 0.5)",
-        ].join(";");
-
-        console.log("%c✨ Welcome to Farhad Saeed's Portfolio ✨", styles);
-        console.log(
-          "%cLooking for a talented Civil Engineer & Designer?",
-          "color: #6366F1; font-size: 14px;"
-        );
-        console.log(
-          "%cLet's connect: farhadsaeed0314@gmail.com",
-          "color: #8B5CF6; font-size: 14px;"
-        );
-
-        // ========================================
-        // ACCESSIBILITY ENHANCEMENTS
-        // ========================================
-
-        // Skip to main content functionality
-        const skipLink = document.createElement("a");
-        skipLink.href = "#home";
-        skipLink.textContent = "Skip to main content";
-        skipLink.className = "skip-link";
-        skipLink.style.cssText = `
-    `;
-
-        skipLink.addEventListener("focus", function () {
-          this.style.top = "0";
-        });
-
-        skipLink.addEventListener("blur", function () {
-          this.style.top = "-40px";
-        });
-
-        document.body.insertBefore(skipLink, document.body.firstChild);
-
-        // ========================================
-        // EASTER EGG (OPTIONAL FUN FEATURE)
-        // ========================================
-        let konamiCode = [
-          "ArrowUp",
-          "ArrowUp",
-          "ArrowDown",
-          "ArrowDown",
-          "ArrowLeft",
-          "ArrowRight",
-          "ArrowLeft",
-          "ArrowRight",
-          "b",
-          "a",
-        ];
-        let konamiIndex = 0;
-
-        document.addEventListener("keydown", function (e) {
-          if (e.key === konamiCode[konamiIndex]) {
-            konamiIndex++;
-            if (konamiIndex === konamiCode.length) {
-              activateEasterEgg();
-              konamiIndex = 0;
-            }
-          } else {
-            konamiIndex = 0;
-          }
-        });
-
-        function activateEasterEgg() {
-          showNotification(
-            "success",
-            "🎉 You found the secret! You're awesome!"
-          );
-
-          // Add temporary rainbow effect
-          const style = document.createElement("style");
-          style.innerHTML = `
-            @keyframes rainbow {
-                0%, 100% { filter: hue-rotate(0deg); }
-                50% { filter: hue-rotate(360deg); }
-            }
-            body { animation: rainbow 2s linear; }
-        `;
-          document.head.appendChild(style);
-
-          setTimeout(() => {
-            style.remove();
-          }, 2000);
-        }
-
-        // ========================================
-        // SERVICE WORKER REGISTRATION (PWA READY)
-        // ========================================
-        if ("serviceWorker" in navigator) {
-          window.addEventListener("load", function () {
-            // Uncomment below to enable PWA
-            // navigator.serviceWorker.register('/sw.js')
-            //     .then(registration => console.log('SW registered:', registration))
-            //     .catch(error => console.log('SW registration failed:', error));
-          });
-        }
-
-        // ========================================
-        // PERFORMANCE METRICS
-        // ========================================
-        if (window.performance && window.performance.timing) {
-          window.addEventListener("load", function () {
-            setTimeout(function () {
-              const perfData = window.performance.timing;
-              const pageLoadTime =
-                perfData.loadEventEnd - perfData.navigationStart;
-              console.log(
-                "%cPage Load Time: " + pageLoadTime + "ms",
-                "color: #10B981; font-weight: bold;"
-              );
-            }, 0);
-          });
-        }
-      })();
-    </script>
   </body>
 </html>
